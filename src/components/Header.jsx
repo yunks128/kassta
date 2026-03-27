@@ -55,11 +55,7 @@ export default function Header() {
     <header>
       <div className="nav-wrapper">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <div className="logo-icon">K</div>
-          <div className="logo-text">
-            KASSTA
-            <span>Korean American AeroSpace Science &amp; Technology Association</span>
-          </div>
+          <img src={import.meta.env.BASE_URL + 'images/logo.png'} alt="KASSTA" className="logo-img" />
         </Link>
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span /><span /><span />
