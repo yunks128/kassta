@@ -51,14 +51,34 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  padding: 6px 0;
+  gap: 12px;
+  padding: 8px 0;
   text-decoration: none;
+  color: var(--white);
   flex-shrink: 0;
 }
 
-.logo-img {
-  height: 48px;
+.logo:hover { color: var(--white); }
+
+.logo-icon-img {
+  height: 44px;
   width: auto;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--white);
+}
+
+.logo-text span {
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  opacity: 0.75;
 }
 
 /* Nav */
