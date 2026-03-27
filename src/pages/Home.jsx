@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
 import YouTubeCard from '../components/YouTubeCard'
-import { youtubeVideos } from '../data/content'
+import { webinars } from '../data/content'
 
 export default function Home() {
+  const recentVideos = webinars
+    .filter(w => w.videos && w.videos.length > 0)
+    .slice(0, 3)
+    .flatMap(w => w.videos)
+    .slice(0, 6)
+
   return (
     <>
       <div className="hero">
@@ -69,7 +75,7 @@ export default function Home() {
           <h2 className="section-title">Recent Webinar Recordings</h2>
           <p className="section-subtitle">Watch past webinars on our YouTube channel</p>
           <div className="yt-grid">
-            {youtubeVideos.slice(0, 6).map(v => (
+            {recentVideos.map(v => (
               <YouTubeCard key={v.id} id={v.id} title={v.title} />
             ))}
           </div>

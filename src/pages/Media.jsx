@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import YouTubeCard from '../components/YouTubeCard'
-import { youtubeVideos } from '../data/content'
+import { webinars, workshop2024Videos, forumVideos, otherTalks } from '../data/content'
 
 export default function Media() {
   const { hash } = useLocation()
@@ -15,6 +15,8 @@ export default function Media() {
       window.scrollTo(0, 0)
     }
   }, [hash])
+
+  const allWebinarVideos = webinars.flatMap(w => w.videos || [])
 
   return (
     <>
@@ -31,10 +33,33 @@ export default function Media() {
 
       <section className="alt-bg">
         <div className="container">
-          <h2 className="section-title">KASSTA on YouTube</h2>
-          <p className="section-subtitle">Watch our webinars, workshops, and event recordings</p>
+          <h2 className="section-title">Webinar Recordings</h2>
+          <p className="section-subtitle">Monthly tech webinar recordings</p>
           <div className="yt-grid">
-            {youtubeVideos.slice(0, 9).map(v => (
+            {allWebinarVideos.slice(0, 6).map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <h2 className="section-title">Workshop & Forum Recordings</h2>
+          <p className="section-subtitle">Event recordings from workshops and UKC forums</p>
+          <div className="yt-grid">
+            {[...forumVideos, ...workshop2024Videos.slice(0, 3)].map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="alt-bg">
+        <div className="container">
+          <h2 className="section-title">Featured Talks</h2>
+          <div className="yt-grid">
+            {otherTalks.map(v => (
               <YouTubeCard key={v.id} id={v.id} title={v.title} />
             ))}
           </div>

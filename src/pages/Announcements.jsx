@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import PageHeader from '../components/PageHeader'
-import EventItem from '../components/EventItem'
+import YouTubeCard from '../components/YouTubeCard'
 import { announcements } from '../data/content'
 
 export default function Announcements() {
@@ -13,7 +13,32 @@ export default function Announcements() {
         <div className="container">
           <div className="event-list">
             {announcements.map((a, i) => (
-              <EventItem key={i} date={a.date} title={a.title} meta={a.meta} desc={a.desc} link={a.link} />
+              <div key={i} className="event-item" style={{ flexDirection: 'column' }}>
+                <div style={{ display: 'flex', gap: 24 }}>
+                  <div className="event-date-box">
+                    <span className="month">{a.date.month}</span>
+                    <span className="day">{a.date.day}</span>
+                    <span className="year">{a.date.year}</span>
+                  </div>
+                  <div className="event-details">
+                    <h3>{a.title}</h3>
+                    <div className="meta">{a.meta}</div>
+                    <p>{a.desc}</p>
+                    {a.link && (
+                      <a href={a.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 12, display: 'inline-block', fontSize: '0.85rem', padding: '8px 20px' }}>
+                        Register
+                      </a>
+                    )}
+                  </div>
+                </div>
+                {a.videos && a.videos.length > 0 && (
+                  <div className="yt-grid" style={{ marginTop: 16 }}>
+                    {a.videos.map(v => (
+                      <YouTubeCard key={v.id} id={v.id} title={v.title} />
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>

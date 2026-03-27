@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import YouTubeCard from '../components/YouTubeCard'
-import { youtubeVideos } from '../data/content'
+import { workshop2024Videos, forumVideos } from '../data/content'
 
 export default function Activities() {
   const { hash } = useLocation()
@@ -15,14 +15,6 @@ export default function Activities() {
       window.scrollTo(0, 0)
     }
   }, [hash])
-
-  const workshopVideos = youtubeVideos.filter(v =>
-    v.title.toLowerCase().includes('workshop') || v.title.toLowerCase().includes('kor-us')
-  )
-
-  const forumVideos = youtubeVideos.filter(v =>
-    v.title.toLowerCase().includes('ukc') || v.title.toLowerCase().includes('forum')
-  )
 
   return (
     <>
@@ -52,16 +44,12 @@ export default function Activities() {
             <p style={{ marginTop: 16 }}>Part of the UKC 2025 conference in Atlanta, GA (August 5-9, 2025).</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcrHIOBcdmIAuFqhuS6x73Orr4SHrqWwe0VYXhN8J1Yvw4Sw/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 16 }}>Apply Now</a>
           </div>
-          {forumVideos.length > 0 && (
-            <>
-              <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>Forum Recordings</h3>
-              <div className="yt-grid" style={{ marginTop: 20 }}>
-                {forumVideos.map(v => (
-                  <YouTubeCard key={v.id} id={v.id} title={v.title} />
-                ))}
-              </div>
-            </>
-          )}
+          <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>UKC Forum Recordings</h3>
+          <div className="yt-grid" style={{ marginTop: 20 }}>
+            {forumVideos.map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -74,16 +62,12 @@ export default function Activities() {
             <p><strong>Organizers:</strong> KASSTA, Korean Space Science Society (KSSS), and NASA JPL</p>
             <p style={{ marginTop: 16 }}>This three-day workshop fostered collaboration between participating organizations, attracting 70 scientists from across the aerospace community to share research and forge new partnerships.</p>
           </div>
-          {workshopVideos.length > 0 && (
-            <>
-              <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>Workshop Recordings</h3>
-              <div className="yt-grid" style={{ marginTop: 20 }}>
-                {workshopVideos.map(v => (
-                  <YouTubeCard key={v.id} id={v.id} title={v.title} />
-                ))}
-              </div>
-            </>
-          )}
+          <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>Workshop 2024 Recordings</h3>
+          <div className="yt-grid" style={{ marginTop: 20 }}>
+            {workshop2024Videos.map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
         </div>
       </section>
 
