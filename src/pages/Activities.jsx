@@ -22,6 +22,7 @@ export default function Activities() {
 
       <section id="workshop2025">
         <div className="container">
+          <img src={import.meta.env.BASE_URL + 'images/workshop2025-banner.jpg'} alt="Workshop 2025" style={{ width: '100%', borderRadius: 10, marginBottom: 24 }} />
           <div className="info-box">
             <h2>International Collaboration Workshop on Space Science &amp; Technology 2025</h2>
             <p><strong>Dates:</strong> October 26-29, 2025</p>
@@ -61,6 +62,7 @@ export default function Activities() {
             <p><strong>Location:</strong> California Institute of Technology (Caltech), Pasadena, CA</p>
             <p><strong>Organizers:</strong> KASSTA, Korean Space Science Society (KSSS), and NASA JPL</p>
             <p style={{ marginTop: 16 }}>This three-day workshop fostered collaboration between participating organizations, attracting 70 scientists from across the aerospace community to share research and forge new partnerships.</p>
+            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2024 group photo" style={{ width: '100%', borderRadius: 8, marginTop: 20 }} />
           </div>
           <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>Workshop 2024 Recordings</h3>
           <div className="yt-grid" style={{ marginTop: 20 }}>

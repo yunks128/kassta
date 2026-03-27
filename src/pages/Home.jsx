@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero">
+      <div className="hero" style={{ backgroundImage: `linear-gradient(rgba(11,29,58,0.7), rgba(26,82,118,0.7)), url(${import.meta.env.BASE_URL}images/hero-banner.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container">
           <h1>KASSTA</h1>
           <p>Advancing U.S.-Korea collaboration in aerospace science and technology</p>
@@ -28,6 +28,7 @@ export default function Home() {
           <p className="section-subtitle">Join our next webinar, workshop, or forum</p>
           <div className="card-grid">
             <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/webinar-mar2026.jpg'} alt="KASSTA Webinar March 2026" className="card-img" />
               <div className="card-body">
                 <span className="tag">Webinar</span>
                 <h3>KASSTA Webinar - March 20, 2026</h3>
@@ -37,6 +38,7 @@ export default function Home() {
               </div>
             </div>
             <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/workshop2025-banner.jpg'} alt="Workshop 2025 Jeju" className="card-img" />
               <div className="card-body">
                 <span className="tag">Workshop</span>
                 <h3>Workshop 2025 - Jeju, South Korea</h3>
@@ -46,6 +48,7 @@ export default function Home() {
               </div>
             </div>
             <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/conference-collage.jpg'} alt="UKC AeroSpace Forum" className="card-img" />
               <div className="card-body">
                 <span className="tag">Forum</span>
                 <h3>UKC 2025 AeroSpace Forum</h3>

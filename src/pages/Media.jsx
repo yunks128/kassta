@@ -24,9 +24,12 @@ export default function Media() {
 
       <section id="newsletter">
         <div className="container">
-          <div className="info-box">
-            <h2>2025 KASSTA Newsletter</h2>
-            <p>Our annual newsletter covering KASSTA activities, achievements, and upcoming events.</p>
+          <div className="info-box" style={{ display: 'flex', gap: 24, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Newsletter" style={{ width: 200, borderRadius: 8, flexShrink: 0 }} />
+            <div>
+              <h2>KASSTA Newsletter</h2>
+              <p>Our newsletter covering KASSTA activities, achievements, and upcoming events.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -108,6 +111,50 @@ export default function Media() {
               <h3>KASSTA in KSEA Newsletter (June 2024)</h3>
               <p>Highlights KASSTA's founding activities and achievements in its inaugural year.</p>
               <a href="https://ksealetters.com/2024/06/03/korean-american-aerospace-science-and-technology-association-kassta/" target="_blank" rel="noopener noreferrer">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="alt-bg">
+        <div className="container">
+          <h2 className="section-title">Photo Gallery</h2>
+          <p className="section-subtitle">Highlights from KASSTA events</p>
+          <div className="card-grid">
+            <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop group photo" className="card-img" />
+              <div className="card-body">
+                <h3>KOR-US Joint Workshop at Caltech</h3>
+                <p>70 scientists gathered for three days of collaboration, December 2024.</p>
+              </div>
+            </div>
+            <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/conference-collage.jpg'} alt="Conference highlights" className="card-img" />
+              <div className="card-body">
+                <h3>Conference Highlights</h3>
+                <p>Presentations and networking at KASSTA events.</p>
+              </div>
+            </div>
+            <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/korea-visit.jpg'} alt="Korean Space Environment Center" className="card-img" />
+              <div className="card-body">
+                <h3>Korean Space Environment Center Visit</h3>
+                <p>KASSTA delegation visiting space facilities in Korea.</p>
+              </div>
+            </div>
+            <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/space-center-visit.jpg'} alt="Space center visit" className="card-img" />
+              <div className="card-body">
+                <h3>Space Weather Monitoring Center</h3>
+                <p>Tour of space weather research facilities.</p>
+              </div>
+            </div>
+            <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/presenter.jpg'} alt="Presenter" className="card-img" />
+              <div className="card-body">
+                <h3>The Search for Life Beyond Earth</h3>
+                <p>A talk at the KASSTA workshop on astrobiology research.</p>
+              </div>
             </div>
           </div>
         </div>
