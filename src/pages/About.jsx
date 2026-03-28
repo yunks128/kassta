@@ -110,16 +110,16 @@ export default function About() {
             <p>KASSTA collaborates with leading organizations in aerospace science and technology:</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 24, marginTop: 24 }}>
               {[
-                { name: 'KOFST', full: 'Korean Federation of Science & Technology Societies', logo: 'logo-kofst.png' },
-                { name: 'KUSCO', full: 'Korea-U.S. Science Cooperation Center', logo: 'logo-kusco.png' },
-                { name: 'KSEA', full: 'Korean-American Scientists and Engineers Association', logo: 'logo-ksea.png' },
-                { name: 'Consulate General of Korea in LA', full: 'Consulate General of the Republic of Korea in Los Angeles', logo: 'logo-consulate.png' },
+                { name: 'KOFST', full: 'Korean Federation of Science & Technology Societies', logo: 'logo-kofst.png', url: 'https://www.kofst.or.kr/' },
+                { name: 'KUSCO', full: 'Korea-U.S. Science Cooperation Center', logo: 'logo-kusco.png', url: 'https://www.kusco.org/' },
+                { name: 'KSEA', full: 'Korean-American Scientists and Engineers Association', logo: 'logo-ksea.png', url: 'https://www.ksea.org/' },
+                { name: 'Consulate General of Korea in LA', full: 'Consulate General of the Republic of Korea in Los Angeles', logo: 'logo-consulate.png', url: 'https://overseas.mofa.go.kr/us-losangeles-en/' },
               ].map(p => (
-                <div key={p.name} className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 24 }}>
+                <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 24, textDecoration: 'none' }}>
                   <img src={import.meta.env.BASE_URL + 'images/' + p.logo} alt={p.name} style={{ maxHeight: 80, width: 'auto', marginBottom: 16, objectFit: 'contain' }} />
                   <h3 style={{ textAlign: 'center', fontSize: '0.95rem' }}>{p.name}</h3>
                   <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-light)' }}>{p.full}</p>
-                </div>
+                </a>
               ))}
             </div>
           </div>
