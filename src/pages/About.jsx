@@ -108,18 +108,17 @@ export default function About() {
           <div className="info-box">
             <h2>Partners &amp; Sponsors</h2>
             <p>KASSTA collaborates with leading organizations in aerospace science and technology:</p>
-            <div className="card-grid" style={{ marginTop: 20 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: 24, marginTop: 24 }}>
               {[
-                { name: 'Korean Space Science Society (KSSS)', desc: 'Co-organizer of international workshops' },
-                { name: 'NASA Jet Propulsion Laboratory', desc: 'Workshop partner and research collaboration' },
-                { name: 'Korea Aerospace Research Institute (KARA)', desc: 'Supporting organization for workshops' },
-                { name: 'KSEA', desc: 'Korean-American Scientists and Engineers Association - parent organization' },
+                { name: 'KOFST', full: 'Korean Federation of Science & Technology Societies', logo: 'logo-kofst.png' },
+                { name: 'KUSCO', full: 'Korea-U.S. Science Cooperation Center', logo: 'logo-kusco.png' },
+                { name: 'KSEA', full: 'Korean-American Scientists and Engineers Association', logo: 'logo-ksea.png' },
+                { name: 'Consulate General of Korea in LA', full: 'Consulate General of the Republic of Korea in Los Angeles', logo: 'logo-consulate.png' },
               ].map(p => (
-                <div key={p.name} className="card">
-                  <div className="card-body">
-                    <h3>{p.name}</h3>
-                    <p>{p.desc}</p>
-                  </div>
+                <div key={p.name} className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 24 }}>
+                  <img src={import.meta.env.BASE_URL + 'images/' + p.logo} alt={p.name} style={{ maxHeight: 80, width: 'auto', marginBottom: 16, objectFit: 'contain' }} />
+                  <h3 style={{ textAlign: 'center', fontSize: '0.95rem' }}>{p.name}</h3>
+                  <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-light)' }}>{p.full}</p>
                 </div>
               ))}
             </div>
