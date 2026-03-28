@@ -113,7 +113,7 @@ export default function About() {
                 { name: 'KOFST', full: 'Korean Federation of Science & Technology Societies', logo: 'logo-kofst.png', url: 'https://www.kofst.or.kr/' },
                 { name: 'KUSCO', full: 'Korea-U.S. Science Cooperation Center', logo: 'logo-kusco.png', url: 'https://www.kusco.org/' },
                 { name: 'KSEA', full: 'Korean-American Scientists and Engineers Association', logo: 'logo-ksea.png', url: 'https://www.ksea.org/' },
-                { name: 'Consulate General of Korea in LA', full: 'Consulate General of the Republic of Korea in Los Angeles', logo: 'logo-consulate.png', url: 'https://overseas.mofa.go.kr/us-losangeles-en/' },
+                { name: 'Consulate General of Korea in LA', full: 'Consulate General of the Republic of Korea in Los Angeles', logo: 'logo-consulate.png', url: 'https://www.mofa.go.kr/us-losangeles-ko/index.do' },
               ].map(p => (
                 <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 24, textDecoration: 'none' }}>
                   <img src={import.meta.env.BASE_URL + 'images/' + p.logo} alt={p.name} style={{ maxHeight: 80, width: 'auto', marginBottom: 16, objectFit: 'contain' }} />
