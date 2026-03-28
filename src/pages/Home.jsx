@@ -37,6 +37,7 @@ export default function Home() {
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScZBsZd4_LEmGZGb0j0TRpSUqjGAuURaHVNUeiVGkdkNIeQ3g/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
                 <a href="https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
                 <a href="https://open.kakao.com/o/gnsHNZag" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>KakaoTalk</a>
+                <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-04-24-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
               </div>
             </div>
           </div>
