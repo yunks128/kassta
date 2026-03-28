@@ -21,6 +21,9 @@ export default function Membership() {
 
             <h3>Option 2: Direct KASSTA Membership</h3>
             <p>For non-KSEA members or those preferring direct enrollment, you can join KASSTA directly by paying the membership fee below.</p>
+            <div style={{ marginTop: 12 }}>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8ECV3lfhmW3JnS6Oq7AYSAayOJAVQFZe71709znxpriZ_ww/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">KASSTA Membership Sign Up</a>
+            </div>
           </div>
 
           <div className="pricing-grid" style={{ maxWidth: 900, margin: '24px auto 0' }}>
@@ -82,8 +85,8 @@ export default function Membership() {
           <div style={{ textAlign: 'center', marginTop: 40 }}>
             <p style={{ color: 'var(--text-light)', marginBottom: 16 }}>Ready to join? Sign up through KSEA or contact us directly.</p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://www.ksea.org/membership" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '1rem', padding: '13px 32px' }}>Join via KSEA</a>
-              <a href="mailto:kassta.fd@gmail.com" className="btn btn-secondary" style={{ fontSize: '1rem', padding: '13px 32px' }}>Contact Us to Join</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8ECV3lfhmW3JnS6Oq7AYSAayOJAVQFZe71709znxpriZ_ww/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '1rem', padding: '13px 32px' }}>Join KASSTA Directly</a>
+              <a href="https://www.ksea.org/membership" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ fontSize: '1rem', padding: '13px 32px' }}>Join via KSEA</a>
             </div>
           </div>
         </div>
