@@ -24,20 +24,19 @@ export default function Home() {
 
       <section>
         <div className="container">
-          <h2 className="section-title">Upcoming Events</h2>
-          <p className="section-subtitle">Join our next webinar, workshop, or forum</p>
-          <div className="card-grid">
-            <div className="card">
-              <img src={import.meta.env.BASE_URL + 'images/webinar-apr2026.jpg'} alt="KASSTA Regular Meeting April 2026" className="card-img" />
-              <div className="card-body">
-                <span className="tag">Upcoming</span>
-                <h3>KASSTA Regular Meeting - April 24, 2026</h3>
-                <div className="meta">Friday | 4:00 PM PT / 7:00 PM ET | Virtual (Zoom)</div>
-                <p>Woosang Park (Texas A&amp;M) - "Dynamic Nonlinearity and Model Fidelity Effects on Uncorrelated Track Processing"; Hyomin Kim (NJIT) - "Space Weather: How Sun-Earth Interactions Affect Human Technology"</p>
-                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 16 }}>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScZBsZd4_LEmGZGb0j0TRpSUqjGAuURaHVNUeiVGkdkNIeQ3g/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem', padding: '8px 20px' }}>Register</a>
-                  <a href="https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ fontSize: '0.85rem', padding: '8px 20px' }}>Zoom Link</a>
-                </div>
+          <h2 className="section-title">Upcoming Event</h2>
+          <div className="info-box" style={{ display: 'flex', gap: 32, alignItems: 'flex-start', flexWrap: 'wrap', maxWidth: 900, margin: '0 auto' }}>
+            <img src={import.meta.env.BASE_URL + 'images/webinar-apr2026.jpg'} alt="KASSTA Regular Meeting April 2026" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <span className="tag" style={{ marginBottom: 12, display: 'inline-block' }}>Upcoming</span>
+              <h2 style={{ color: 'var(--primary)', marginBottom: 8 }}>KASSTA Regular Meeting</h2>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: 12 }}>Friday, April 24, 2026 | 4:00 PM PT / 7:00 PM ET</p>
+              <p style={{ marginBottom: 8 }}><strong>Woosang Park</strong> (Postdoctoral Researcher, Texas A&amp;M University)<br />Dynamic Nonlinearity and Model Fidelity Effects on Uncorrelated Track Processing</p>
+              <p style={{ marginBottom: 16 }}><strong>Hyomin Kim</strong> (Assistant Professor, NJIT)<br />Space Weather: How Sun-Earth Interactions Affect Human Technology</p>
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScZBsZd4_LEmGZGb0j0TRpSUqjGAuURaHVNUeiVGkdkNIeQ3g/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
+                <a href="https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
+                <a href="https://open.kakao.com/o/gnsHNZag" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>KakaoTalk</a>
               </div>
             </div>
           </div>
