@@ -51,7 +51,9 @@ export default function Home() {
           <div className="info-box" style={{ maxWidth: 800, margin: '0 auto' }}>
             <p>KASSTA is a 501(c)(3) nonprofit organization established in 2024 to strengthen U.S.-Korea collaboration in aerospace science and technology. We bring together researchers, engineers, and professionals through monthly webinars, international workshops, and forums.</p>
             <p style={{ marginTop: 16 }}>Our members include scientists from NASA, KARI, Boeing, universities, and leading aerospace companies, working together to advance space exploration for both nations.</p>
-            <Link to="/about" className="btn btn-primary" style={{ marginTop: 20, display: 'inline-block' }}>Read President's Message</Link>
+            <div style={{ textAlign: 'center', marginTop: 20 }}>
+              <Link to="/about" className="btn btn-primary">Read President's Message</Link>
+            </div>
           </div>
         </div>
       </section>
