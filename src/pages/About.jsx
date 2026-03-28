@@ -51,22 +51,41 @@ export default function About() {
         <div className="container">
           <div className="info-box">
             <h2>Bylaws</h2>
-            <h3>Purpose</h3>
-            <p>KASSTA operates as a 501(c)(3) non-profit with four main objectives:</p>
-            <ul>
-              <li>Advancing space and aeronautics through USA-Korea cooperation</li>
-              <li>Promoting professional fellowship among Korean-American aerospace professionals</li>
-              <li>Cultivating the next generation of Korean-American scientists and engineers</li>
-              <li>Supporting technical conferences, workshops, and scholarship initiatives</li>
-            </ul>
 
-            <h3>Membership Categories</h3>
-            <ul>
-              <li><strong>Regular Members:</strong> Korean aerospace scholars in North America with bachelor's degrees or equivalent</li>
-              <li><strong>Associate Members:</strong> Korean students pursuing aerospace-related degrees at North American institutions</li>
-              <li><strong>Supporting Members:</strong> Organizational or individual supporters of the association's mission</li>
-            </ul>
-            <p style={{ marginTop: 12 }}>Voting members must have paid dues within the last two fiscal years. Regular members may purchase lifetime memberships.</p>
+            <h3>PURPOSE AND PROGRAMS</h3>
+            <h4 style={{ color: 'var(--accent)', marginTop: 16, marginBottom: 8 }}>Statement of Purpose</h4>
+            <p>The Korean American AeroSpace Science and Technology Association (KASSTA), hereinafter abbreviated as Association, shall be operated exclusively as a non-profit organization exempt from Federal income tax under Section 501(c)(3) of the Internal Revenue Code to achieve the following objectives:</p>
+            <ol style={{ paddingLeft: 24, marginTop: 8 }}>
+              <li>Contribute to the social welfare and the industrial development in the USA and Korea through the promotion of Space and Aeronautics-related science and engineering.</li>
+              <li>Promote cooperation between the USA and Korea in Space and Aeronautics-related fields.</li>
+              <li>Promote fellowship among Korean-American professionals engaged in Space and Aeronautics-related science and engineering.</li>
+              <li>Promote and cultivate the next generation of Korean-American scientists and engineers in the Space and Aeronautics-related fields.</li>
+            </ol>
+
+            <h4 style={{ color: 'var(--accent)', marginTop: 20, marginBottom: 8 }}>Programs</h4>
+            <ol style={{ paddingLeft: 24 }}>
+              <li>Activities to advance technical capabilities and industrial development in the USA and Korea.</li>
+              <li>Activities to promote cooperation between the USA and Korea.</li>
+              <li>Technical conferences, symposiums, and workshops in the USA and Korea.</li>
+              <li>Scholarship and internship programs in the United States and Korea.</li>
+              <li>Activities to promote friendship and fellowship among the members.</li>
+              <li>Activities to promote and cultivate the next generation of Korean-American scientists and engineers.</li>
+            </ol>
+
+            <h3>MEMBERSHIP</h3>
+            <p>The members of the association include regular members, associate members, and supporting members with following qualifications. A person may become a member after the Executive Committee has examined the application and approved the membership.</p>
+            <ol style={{ paddingLeft: 24, marginTop: 8 }}>
+              <li><strong>Regular members</strong> are Korean Aeronautics and Space science scholars residing in North America who possess a bachelor's degree or higher in Space and Aeronautics-related fields or equivalent qualifications.</li>
+              <li><strong>Associate members</strong> are Korean students studying at a university or graduate school in North America majoring in AeroSpace Science and Technology related fields.</li>
+              <li><strong>Supporting members</strong> are supporters of the association or individuals or organizations that have contributed to the development and dissemination of AeroSpace Science.</li>
+            </ol>
+            <p style={{ marginTop: 12 }}>A voting member is a regular member, associate member, or supporting member, who has paid the membership due at least once within the last two fiscal years (the current and the past) received by the association or KSEA Headquarters. Regular members can become life members by paying lifetime membership fees. All rights and privileges of membership shall be lost if the annual due is not paid for two consecutive fiscal years. A voting member has a right to be elected as an officer of the association.</p>
+
+            <h3>Meeting of Members ("General Assembly")</h3>
+            <p>Except as otherwise provided in these Bylaws or by law, at all general assemblies, the presence, including electronic presence, of one-tenth of the voting members at the commencement of such meeting shall be necessary and sufficient to constitute a quorum for the transaction of any business. Every voting member shall have one (1) vote. Decisions shall be made by a majority of the votes cast except as otherwise provided by law or by these Bylaws. In case of a tie vote, the Chair shall have the deciding power.</p>
+
+            <h3>Disciplinary Actions</h3>
+            <p>In accordance with the policies and procedure adopted by the Council, the Council may suspend the rights and privileges of membership or expel any member who violates the Bylaws or policies, interferes with the association's goals and business, or disgraces association's reputation.</p>
           </div>
         </div>
       </section>
