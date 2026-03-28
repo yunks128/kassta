@@ -1,22 +1,22 @@
 export const leaders = {
   executive: [
-    { name: 'Eun-Suk Seo', role: 'President', affiliation: 'Professor of Physics, University of Maryland' },
-    { name: 'Jeong-Beom Ihn', role: 'Vice President', affiliation: 'Technical Fellow, The Boeing Company' },
-    { name: 'Chunyoung Park', role: 'Executive Director', affiliation: 'Aerospace Engineer, Pyramid Space Inc.' },
-    { name: 'Yaeji Kim', role: 'Deputy Executive Director', affiliation: 'Postdoctoral Researcher, University of Maryland' },
+    { name: 'Eun-Suk Seo', role: 'President', affiliation: 'Professor of Physics\nUniversity of Maryland', img: 'seo' },
+    { name: 'Jeong-Beom Ihn', role: 'Vice President', affiliation: 'Technical Fellow\nThe Boeing Company', img: 'ihn' },
+    { name: 'Chunyoung Park', role: 'Executive Director', affiliation: 'Aerospace Engineer\nPyramid Space Inc.', img: 'park' },
+    { name: 'Yaeji Kim', role: 'Deputy Executive Director', affiliation: 'Postdoctoral Researcher Astronomy\nUniversity of Maryland', img: 'kim_y' },
   ],
   directors: [
-    { name: 'Jayoung Wu', role: 'Finance Director', affiliation: 'Visiting Senior Faculty Specialist, University of Maryland' },
-    { name: 'Daniel Warren', role: 'Director of Strategic Partnerships', affiliation: 'VP of Sales and Programs Americas, Latecoere' },
-    { name: 'Sunjae Kim', role: 'Membership Director', affiliation: 'Assistant Professor, University of Florida' },
-    { name: 'Soyeon Yi', role: 'Public Relations Director', affiliation: 'Astronaut, GBD at SPEX Inc.' },
-    { name: 'Simon Sim', role: 'Media Director', affiliation: 'Principal/Adjunct, KSCEE' },
-    { name: 'Kyongsik Yun', role: 'IT Director', affiliation: 'Technologist, NASA JPL' },
-    { name: 'Eunjung Chae', role: 'Auditor', affiliation: 'Associate Professor, Cal State Long Beach' },
+    { name: 'Jayoung Wu', role: 'Finance Director', affiliation: 'Visiting Senior Faculty Specialist\nUniversity of Maryland', img: 'wu' },
+    { name: 'Daniel Warren', role: 'Director of Strategic Partnerships', affiliation: 'VP of Sales and Programs Americas\nLatecoere', img: 'warren' },
+    { name: 'Sunjae Kim', role: 'Membership Director', affiliation: 'Assistant Professor of Mechanical & Aerospace Engineering\nUniversity of Florida', img: 'kim_s' },
+    { name: 'Soyeon Yi', role: 'Public Relations Director', affiliation: 'Astronaut\nGBD at SPEX, Inc', img: 'yi' },
+    { name: 'Simon Sim', role: 'Media Director', affiliation: 'Principal / Adjunct\nKorean-American Society of Civil and Environmental Engineers (KSCEE)', img: 'sim' },
+    { name: 'Kyongsik Yun', role: 'IT Director', affiliation: 'Technologist\nNASA JPL', img: 'yun' },
+    { name: 'Eunjung Chae', role: 'Auditor', affiliation: 'Associate Professor of Mechanical and Aerospace Engineering\nCalifornia State University, Long Beach', img: 'chae' },
   ],
   advisors: [
-    { name: 'Jaehoon Kim', role: 'Advisor', affiliation: 'Executive/Senior Technical Fellow, The Boeing Company' },
-    { name: 'Sung-Ju Kim', role: 'Advisor', affiliation: 'Associate Professor, NC State University' },
+    { name: 'Jaehoon Kim', role: 'Advisor', affiliation: 'Executive / Senior Technical Fellow\nThe Boeing Company', img: 'kim_j' },
+    { name: 'Sung-Ju Kim', role: 'Business Advisor', affiliation: 'Associate Professor of School of Social Work\nNC State University', img: 'kim_sj' },
   ],
 }
 

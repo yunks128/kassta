@@ -2,14 +2,25 @@ import { useEffect } from 'react'
 import PageHeader from '../components/PageHeader'
 import { leaders } from '../data/content'
 
-function LeaderCard({ name, role, affiliation }) {
-  const initials = name.split(' ').map(n => n[0]).join('')
+function LeaderCard({ name, role, affiliation, img }) {
   return (
     <div className="leader-card">
-      <div className="leader-avatar">{initials}</div>
+      {img ? (
+        <img
+          src={import.meta.env.BASE_URL + `images/leaders/${img}.jpg`}
+          alt={name}
+          className="leader-photo"
+        />
+      ) : (
+        <div className="leader-avatar">
+          {name.split(' ').map(n => n[0]).join('')}
+        </div>
+      )}
       <h3>{name}</h3>
       <div className="role">{role}</div>
-      <div className="affiliation">{affiliation}</div>
+      <div className="affiliation">{affiliation.split('\n').map((line, i) => (
+        <span key={i}>{line}{i < affiliation.split('\n').length - 1 && <br />}</span>
+      ))}</div>
     </div>
   )
 }

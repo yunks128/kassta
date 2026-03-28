@@ -344,9 +344,18 @@ section.alt-bg { background: var(--light-bg); }
 
 .leader-card:hover { transform: translateY(-4px); }
 
+.leader-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  border: 3px solid var(--border);
+}
+
 .leader-avatar {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--highlight), var(--accent));
   color: var(--white);
