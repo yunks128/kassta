@@ -61,6 +61,7 @@ export const announcements = [
     meta: '4:00 PM PT / 7:00 PM ET | Virtual',
     desc: 'Dr. Jason Hyon (NASA JPL) - JPL Quantum Space Innovation Center; Dr. Jae-Hung Han (KAIST) - Space services and manufacturing. Moderator: Soyeon Yi',
     videos: [
+      { id: 'JLyi1Lcw3lU', title: 'Jason Hyon - Quantum Space Innovation Center (QSIC), NASA JPL' },
       { id: 'DwHVfhm4wEM', title: 'Kwangsun Ryu - Space Environment Monitoring, KAIST SaTReC' },
       { id: '9xNTg-uyUBA', title: 'Jae-Hung Han - Space Service and Manufacturing, KAIST' },
     ],
@@ -165,6 +166,7 @@ export const webinars = [
     title: 'Quantum Technology & Space Manufacturing',
     speakers: 'Dr. Jason Hyon (NASA JPL) - Quantum Space Innovation Center (QSIC); Dr. Jae-Hung Han (KAIST) - Space services, manufacturing, ADR-sat debris removal',
     videos: [
+      { id: 'JLyi1Lcw3lU', title: 'Jason Hyon - Quantum Space Innovation Center (QSIC), NASA JPL' },
       { id: '9xNTg-uyUBA', title: 'Jae-Hung Han - Space Service and Manufacturing, KAIST' },
     ],
   },
@@ -204,18 +206,6 @@ export const webinars = [
       { id: 'fDqZ7djh9fM', title: 'Regina Lee - Near-Earth Collision Detection, York University' },
     ],
   },
-  {
-    date: { month: 'OCT', day: '19', year: '2024' },
-    title: 'Infrared/X-ray Space Missions',
-    speakers: 'Infrared and X-ray space missions research; Cryogenic flow boiling physics',
-    videos: [],
-  },
-  {
-    date: { month: 'AUG', day: '2', year: '2024' },
-    title: 'STEM Career Talk Concert',
-    speakers: 'Special career-focused event with 60+ attendees discussing STEM pathways in aerospace',
-    videos: [],
-  },
 ]
 
 // Workshop 2024 recordings
@@ -225,7 +215,6 @@ export const workshop2024Videos = [
   { id: 'Wqzw2f5sWKo', title: 'KOR-US Joint Workshop Day 2' },
   { id: 'wyTP0GFpedY', title: 'KOR-US Joint Workshop Day 2 - Presentations' },
   { id: '_fpyavkr7Pg', title: 'KOR-US Joint Workshop Day 3 - NASA/JPL Tour' },
-  { id: 'JLyi1Lcw3lU', title: '2025 International Collaboration Science & Tech' },
   { id: 'HTGBlec73OI', title: 'KOR-US Joint Workshop - NASA/JPL Tour' },
   { id: 'InT9xTLjblI', title: 'KOR-US Joint Workshop - Opening, Dec 15, 2024' },
 ]
