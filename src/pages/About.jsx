@@ -22,8 +22,15 @@ export default function About() {
         <div className="container">
           <div className="info-box">
             <h2>President's Message</h2>
-            <p><strong>Eun-Suk Seo, Ph.D.</strong> — Founding President, Professor at University of Maryland</p>
-            <p style={{ marginTop: 16 }}>KASSTA was established as a 501(c)(3) nonprofit in 2024 to strengthen U.S.-Korea collaboration in aerospace fields. Since our founding, we have achieved significant milestones in bringing together the aerospace community.</p>
+            <div style={{ display: 'flex', gap: 24, alignItems: 'flex-start', flexWrap: 'wrap', marginBottom: 16 }}>
+              <img src={import.meta.env.BASE_URL + 'images/president-seo.jpg'} alt="Dr. Eun-Suk Seo" style={{ width: 180, borderRadius: 10, flexShrink: 0 }} />
+              <div>
+                <p><strong>Eun-Suk Seo, Ph.D.</strong></p>
+                <p>Founding President</p>
+                <p>Professor of Physics, University of Maryland</p>
+              </div>
+            </div>
+            <p>KASSTA was established as a 501(c)(3) nonprofit in 2024 to strengthen U.S.-Korea collaboration in aerospace fields. Since our founding, we have achieved significant milestones in bringing together the aerospace community.</p>
 
             <h3>Recent Achievements</h3>
             <ul>
