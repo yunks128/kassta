@@ -28,33 +28,16 @@ export default function Home() {
           <p className="section-subtitle">Join our next webinar, workshop, or forum</p>
           <div className="card-grid">
             <div className="card">
-              <img src={import.meta.env.BASE_URL + 'images/webinar-mar2026.jpg'} alt="KASSTA Webinar March 2026" className="card-img" />
+              <img src={import.meta.env.BASE_URL + 'images/webinar-apr2026.jpg'} alt="KASSTA Regular Meeting April 2026" className="card-img" />
               <div className="card-body">
-                <span className="tag">Webinar</span>
-                <h3>KASSTA Webinar - March 20, 2026</h3>
-                <div className="meta">Wednesday | 4:00 PM PT / 7:00 PM ET | Virtual</div>
-                <p>Speakers: John C. Mankins (Space Solar Power) &amp; Dae-Young Lee (Soft Robotics for Space). Moderator: Soyeon Yi</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3LW158m2I7dApEz0zpPaRyQiLAHAPg82cOzwiXaoNN-HEgg/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 16, fontSize: '0.85rem', padding: '8px 20px' }}>Register</a>
-              </div>
-            </div>
-            <div className="card">
-              <img src={import.meta.env.BASE_URL + 'images/workshop2025-banner.jpg'} alt="Workshop 2025 Jeju" className="card-img" />
-              <div className="card-body">
-                <span className="tag">Workshop</span>
-                <h3>Workshop 2025 - Jeju, South Korea</h3>
-                <div className="meta">October 26-29, 2025</div>
-                <p>International collaboration workshop on space science &amp; technology. Organized by KSSS, KASSTA, and NASA JPL.</p>
-                <Link to="/activities#workshop2025" className="btn btn-secondary" style={{ marginTop: 16, fontSize: '0.85rem', padding: '8px 20px' }}>Details</Link>
-              </div>
-            </div>
-            <div className="card">
-              <img src={import.meta.env.BASE_URL + 'images/conference-collage.jpg'} alt="UKC AeroSpace Forum" className="card-img" />
-              <div className="card-body">
-                <span className="tag">Forum</span>
-                <h3>UKC 2025 AeroSpace Forum</h3>
-                <div className="meta">August 7, 2025 | 11:00 AM - 1:00 PM | Atlanta, GA</div>
-                <p>Grand Ballroom E, Atlanta, GA. Part of UKC 2025 conference.</p>
-                <Link to="/activities#forum2025" className="btn btn-secondary" style={{ marginTop: 16, fontSize: '0.85rem', padding: '8px 20px' }}>Details</Link>
+                <span className="tag">Upcoming</span>
+                <h3>KASSTA Regular Meeting - April 24, 2026</h3>
+                <div className="meta">Friday | 4:00 PM PT / 7:00 PM ET | Virtual (Zoom)</div>
+                <p>Woosang Park (Texas A&amp;M) - "Dynamic Nonlinearity and Model Fidelity Effects on Uncorrelated Track Processing"; Hyomin Kim (NJIT) - "Space Weather: How Sun-Earth Interactions Affect Human Technology"</p>
+                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 16 }}>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScZBsZd4_LEmGZGb0j0TRpSUqjGAuURaHVNUeiVGkdkNIeQ3g/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem', padding: '8px 20px' }}>Register</a>
+                  <a href="https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ fontSize: '0.85rem', padding: '8px 20px' }}>Zoom Link</a>
+                </div>
               </div>
             </div>
           </div>

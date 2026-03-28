@@ -20,16 +20,29 @@ export const leaders = {
   ],
 }
 
+// Video ID → actual content mapping (verified via thumbnails)
+// YouTube titles on KASSTA channel are off-by-one from actual content.
+// The labels below reflect the ACTUAL video content.
+
 // Announcements with linked YouTube videos
 export const announcements = [
+  {
+    date: { month: 'APR', day: '24', year: '2026' },
+    title: 'KASSTA Regular Meeting',
+    meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
+    desc: 'Woosang Park (Texas A&M) - "Dynamic Nonlinearity and Model Fidelity Effects on Uncorrelated Track Processing"; Hyomin Kim (NJIT) - "Space Weather: How Sun-Earth Interactions Affect Human Technology"',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScZBsZd4_LEmGZGb0j0TRpSUqjGAuURaHVNUeiVGkdkNIeQ3g/viewform?usp=dialog',
+    zoom: 'https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1',
+    videos: [],
+  },
   {
     date: { month: 'MAR', day: '20', year: '2026' },
     title: 'KASSTA Webinar',
     meta: '4:00 PM PT / 7:00 PM ET | Virtual',
     desc: 'John C. Mankins (Artemis Innovation) - "An Overview of Modern and Modular Space Solar Power"; Dae-Young Lee (KAIST) - "Reliability through Softness: A Soft Robotics Approach to Space Exploration". Moderator: Soyeon Yi',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSf3LW158m2I7dApEz0zpPaRyQiLAHAPg82cOzwiXaoNN-HEgg/viewform',
     videos: [
       { id: 'XO9M0IrJ4j0', title: 'John C. Mankins - Modern and Modular Space Solar Power' },
+      { id: '5gyXLBRMGWk', title: 'Dae-Young Lee - Soft Robotics for Space Exploration, KAIST' },
     ],
   },
   {
@@ -38,8 +51,8 @@ export const announcements = [
     meta: '4:00-5:00 PM PT / 7:00-8:00 PM ET | Virtual',
     desc: 'Deok-Ho Kim (Johns Hopkins University Professor), Ruth Chiang Carter (NASA GSFC Retired). Moderator: Soyeon Yi',
     videos: [
-      { id: '8Xw_1Pydo1A', title: 'Dr. Deok Ho Kim, Johns Hopkins University' },
-      { id: '5gyXLBRMGWk', title: 'Dr. Ruth Chiang Carter, NASA GSFC (Retired)' },
+      { id: '8Xw_1Pydo1A', title: 'Ruth Chiang Carter - NASA Mission Development' },
+      { id: 'sK4LsHJ4-gE', title: 'Deok-Ho Kim - Human Organ Chips for Space, Johns Hopkins' },
     ],
   },
   {
@@ -48,8 +61,8 @@ export const announcements = [
     meta: '4:00 PM PT / 7:00 PM ET | Virtual',
     desc: 'Dr. Jason Hyon (NASA JPL) - JPL Quantum Space Innovation Center; Dr. Jae-Hung Han (KAIST) - Space services and manufacturing. Moderator: Soyeon Yi',
     videos: [
-      { id: 'VkP_M3HbwlA', title: 'Dr. Jason Hyon - JPL Quantum Space Innovation Center' },
-      { id: 'DwHVfhm4wEM', title: 'Dr. Jae Hyung Han - KAIST Space Services & Manufacturing' },
+      { id: 'DwHVfhm4wEM', title: 'Kwangsun Ryu - Space Environment Monitoring, KAIST SaTReC' },
+      { id: '9xNTg-uyUBA', title: 'Jae-Hung Han - Space Service and Manufacturing, KAIST' },
     ],
   },
   {
@@ -58,8 +71,8 @@ export const announcements = [
     meta: '4:00 PM PT / 7:00 PM ET | Virtual',
     desc: 'Prof. Hae-Dong Kim (Gyeongsang National University) - On-Orbit Servicing; Dr. JangKeun Kim (Weill Cornell) - Multi-omic dynamics of spaceflight. Moderator: Jeong-Beom Ihn',
     videos: [
-      { id: '2eFw_xx7q1c', title: 'Dr. Hae-Dong Kim - On-Orbit Servicing' },
-      { id: '9xNTg-uyUBA', title: 'Dr. JangKeun Kim - Multi-omic Dynamics of Spaceflight' },
+      { id: 'VkP_M3HbwlA', title: 'Hae-Dong Kim - On-Orbit Servicing' },
+      { id: '2eFw_xx7q1c', title: 'JangKeun Kim - Multi-omic Dynamics of Spaceflight, Weill Cornell' },
     ],
   },
   {
@@ -79,8 +92,8 @@ export const announcements = [
     meta: '5:00 PM PST / 8:00 PM EST | Virtual',
     desc: 'Jae Hwan Kang (Caltech) - SPHEREx Near-Infrared Observatory; Chunyoung Park (Pyramid Space) - Advanced Propulsion Systems. Moderator: Jeong-Beom Ihn',
     videos: [
-      { id: 'jahs7lkJKRs', title: 'Dr. Jae Hwan Kang - SPHEREx Observatory, Caltech' },
-      { id: 'l0lyUpFrF0A', title: 'Dr. Chunyoung Park - Advanced Propulsion, Pyramid Space' },
+      { id: 'oPBI_5LMNmA', title: 'Jae Hwan Kang - SPHEREx Observatory, Caltech' },
+      { id: 'l0lyUpFrF0A', title: 'Soyeon Yi - Astronaut Experience' },
     ],
   },
   {
@@ -89,8 +102,8 @@ export const announcements = [
     meta: '5:00 PM PST / 8:00 PM EST | Virtual',
     desc: 'Prof. Regina Lee (York University) - AI Image Processing for Space; Henry Huh (AFRL) - Electrospray Thrusters. Moderator: Jeong-Beom Ihn',
     videos: [
-      { id: 'gD8MGGQ5b4U', title: 'Prof. Regina Lee - AI Image Processing for Space, York University' },
-      { id: 'yS2NHtDsfGw', title: 'Henry Huh - Electrospray Thrusters, AFRL' },
+      { id: 'gD8MGGQ5b4U', title: 'Henry Huh - Electrospray Thrusters, AFRL' },
+      { id: 'yS2NHtDsfGw', title: 'Regina Lee - AI Image Processing for Space, York University' },
     ],
   },
   {
@@ -99,8 +112,8 @@ export const announcements = [
     meta: '5:00 PM PST / 8:00 PM EST | Virtual',
     desc: 'Jaewoo Jung (NASA Ames) - NASA Extensible Traffic Management; Seungwhan Baek (KARI) - Cryogenic Heat Transfer. Moderator: Jeong-Beom Ihn',
     videos: [
-      { id: 'D1RaZkC01zc', title: 'Dr. Jaewoo Jung - NASA Extensible Traffic Management, NASA Ames' },
-      { id: 'fDqZ7djh9fM', title: 'Dr. Seungwhan Baek - Cryogenic Heat Transfer, KARI' },
+      { id: 'D1RaZkC01zc', title: 'Seungwhan Baek - Cryogenic Heat Transfer, KARI' },
+      { id: 'fDqZ7djh9fM', title: 'Regina Lee - Near-Earth Collision Detection, York University' },
     ],
   },
   {
@@ -112,23 +125,30 @@ export const announcements = [
   },
 ]
 
-// Webinar series with linked YouTube videos
+// Webinar series with linked YouTube videos (verified via thumbnails)
 export const webinars = [
+  {
+    date: { month: 'APR', day: '24', year: '2026' },
+    title: 'Dynamic Nonlinearity & Space Weather',
+    speakers: 'Woosang Park (Texas A&M) - Dynamic Nonlinearity and Model Fidelity Effects on Uncorrelated Track Processing; Hyomin Kim (NJIT) - Space Weather: How Sun-Earth Interactions Affect Human Technology',
+    videos: [],
+  },
   {
     date: { month: 'MAR', day: '20', year: '2026' },
     title: 'Space Solar Power & Soft Robotics for Space',
     speakers: 'John C. Mankins (Artemis Innovation) - Modern and Modular Space Solar Power; Dae-Young Lee (KAIST) - Soft Robotics Approach to Space Exploration',
     videos: [
       { id: 'XO9M0IrJ4j0', title: 'John C. Mankins - Modern and Modular Space Solar Power' },
+      { id: '5gyXLBRMGWk', title: 'Dae-Young Lee - Soft Robotics for Space Exploration, KAIST' },
     ],
   },
   {
     date: { month: 'FEB', day: '18', year: '2026' },
     title: 'Bioengineering & NASA Mission Development',
-    speakers: 'Deok-Ho Kim (Johns Hopkins University) - Bioengineering; Ruth Chiang Carter (NASA GSFC Retired) - NASA Mission Development',
+    speakers: 'Deok-Ho Kim (Johns Hopkins University) - Human Organ Chips for Space; Ruth Chiang Carter (NASA GSFC Retired) - NASA Mission Development',
     videos: [
-      { id: '8Xw_1Pydo1A', title: 'Dr. Deok Ho Kim, Johns Hopkins University' },
-      { id: '5gyXLBRMGWk', title: 'Dr. Ruth Chiang Carter, NASA GSFC (Retired)' },
+      { id: '8Xw_1Pydo1A', title: 'Ruth Chiang Carter - NASA Mission Development' },
+      { id: 'sK4LsHJ4-gE', title: 'Deok-Ho Kim - Human Organ Chips for Space, Johns Hopkins' },
     ],
   },
   {
@@ -136,8 +156,8 @@ export const webinars = [
     title: 'Korea\'s Space Heritage & Planetary Geochemistry',
     speakers: 'Kwangsun Ryu (KAIST SaTReC) - Korea\'s space heritage and science missions; DJ Lee (Purdue) - Planetary geochemistry using LIBS technology',
     videos: [
-      { id: 'hML7nOc8NNY', title: 'Kwangsun Ryu - Korea\'s Space Heritage, KAIST SaTReC' },
-      { id: 'sK4LsHJ4-gE', title: 'Dong Jae Lee - Planetary Geochemistry, Purdue' },
+      { id: 'hML7nOc8NNY', title: 'DJ Lee - Planetary Geochemistry via LIBS, Purdue' },
+      { id: 'DwHVfhm4wEM', title: 'Kwangsun Ryu - Space Environment Monitoring, KAIST SaTReC' },
     ],
   },
   {
@@ -145,8 +165,7 @@ export const webinars = [
     title: 'Quantum Technology & Space Manufacturing',
     speakers: 'Dr. Jason Hyon (NASA JPL) - Quantum Space Innovation Center (QSIC); Dr. Jae-Hung Han (KAIST) - Space services, manufacturing, ADR-sat debris removal',
     videos: [
-      { id: 'VkP_M3HbwlA', title: 'Dr. Jason Hyon - JPL Quantum Space Innovation Center' },
-      { id: 'DwHVfhm4wEM', title: 'Dr. Jae Hyung Han - KAIST Space Services & Manufacturing' },
+      { id: '9xNTg-uyUBA', title: 'Jae-Hung Han - Space Service and Manufacturing, KAIST' },
     ],
   },
   {
@@ -154,8 +173,8 @@ export const webinars = [
     title: 'On-Orbit Servicing & Spaceflight Biology',
     speakers: 'Prof. Hae-Dong Kim (Gyeongsang National University) - On-Orbit Servicing technologies; Dr. JangKeun Kim (Weill Cornell) - Multi-omic dynamics of spaceflight',
     videos: [
-      { id: '2eFw_xx7q1c', title: 'Dr. Hae-Dong Kim - On-Orbit Servicing' },
-      { id: '9xNTg-uyUBA', title: 'Dr. JangKeun Kim - Multi-omic Dynamics of Spaceflight' },
+      { id: 'VkP_M3HbwlA', title: 'Hae-Dong Kim - On-Orbit Servicing' },
+      { id: '2eFw_xx7q1c', title: 'JangKeun Kim - Multi-omic Dynamics of Spaceflight, Weill Cornell' },
     ],
   },
   {
@@ -163,8 +182,8 @@ export const webinars = [
     title: 'SPHEREx Observatory & Advanced Propulsion',
     speakers: 'Jae Hwan Kang (Caltech) - SPHEREx near-infrared all-sky survey; Chunyoung Park (Pyramid Space) - Advanced propulsion and space economy',
     videos: [
-      { id: 'jahs7lkJKRs', title: 'Dr. Jae Hwan Kang - SPHEREx Observatory, Caltech' },
-      { id: 'l0lyUpFrF0A', title: 'Dr. Chunyoung Park - Advanced Propulsion, Pyramid Space' },
+      { id: 'oPBI_5LMNmA', title: 'Jae Hwan Kang - SPHEREx Observatory, Caltech' },
+      { id: 'l0lyUpFrF0A', title: 'Soyeon Yi - Astronaut Experience' },
     ],
   },
   {
@@ -172,8 +191,8 @@ export const webinars = [
     title: 'AI for Space & Electrospray Thrusters',
     speakers: 'Prof. Regina Lee (York University) - AI-based image processing for space situational awareness; Henry Huh (AFRL) - Electrospray thruster computational analysis',
     videos: [
-      { id: 'gD8MGGQ5b4U', title: 'Prof. Regina Lee - AI Image Processing for Space, York University' },
-      { id: 'yS2NHtDsfGw', title: 'Henry Huh - Electrospray Thrusters, AFRL' },
+      { id: 'gD8MGGQ5b4U', title: 'Henry Huh - Electrospray Thrusters, AFRL' },
+      { id: 'yS2NHtDsfGw', title: 'Regina Lee - AI Image Processing for Space, York University' },
     ],
   },
   {
@@ -181,8 +200,8 @@ export const webinars = [
     title: 'Traffic Management & Cryogenic Systems',
     speakers: 'Jaewoo Jung (NASA Ames) - NASA Extensible Traffic Management (xTM); Seungwhan Baek (KARI) - Cryogenic heat transfer for space applications',
     videos: [
-      { id: 'D1RaZkC01zc', title: 'Dr. Jaewoo Jung - NASA Extensible Traffic Management, NASA Ames' },
-      { id: 'fDqZ7djh9fM', title: 'Dr. Seungwhan Baek - Cryogenic Heat Transfer, KARI' },
+      { id: 'D1RaZkC01zc', title: 'Seungwhan Baek - Cryogenic Heat Transfer, KARI' },
+      { id: 'fDqZ7djh9fM', title: 'Regina Lee - Near-Earth Collision Detection, York University' },
     ],
   },
   {
@@ -207,8 +226,8 @@ export const workshop2024Videos = [
   { id: 'wyTP0GFpedY', title: 'KOR-US Joint Workshop Day 2 - Presentations' },
   { id: '_fpyavkr7Pg', title: 'KOR-US Joint Workshop Day 3 - NASA/JPL Tour' },
   { id: 'JLyi1Lcw3lU', title: '2025 International Collaboration Science & Tech' },
-  { id: 'HTGBlec73OI', title: 'Dr. KyongSik Yun - Autonomous Division, NASA JPL' },
-  { id: 'InT9xTLjblI', title: 'Sunjae Kim, Purdue' },
+  { id: 'HTGBlec73OI', title: 'KOR-US Joint Workshop - NASA/JPL Tour' },
+  { id: 'InT9xTLjblI', title: 'KOR-US Joint Workshop - Opening, Dec 15, 2024' },
 ]
 
 // UKC Forum recordings
@@ -218,9 +237,8 @@ export const forumVideos = [
   { id: 'rlco7rvLDow', title: 'UKC Signature Space Forum: Dr. Young Sil Kwak, KASI' },
 ]
 
-// Other featured talks (not tied to a specific webinar date)
+// Other featured talks
 export const otherTalks = [
-  { id: 'knYBIGRBX1U', title: "Dr. Soyeon Yi - South Korea's First and Only Astronaut" },
-  { id: '6lLeEWzeG-M', title: 'Dr. Sangmo Sohn, STScI' },
-  { id: 'oPBI_5LMNmA', title: 'Interview with Dr. Tony Sohn, STScI' },
+  { id: 'knYBIGRBX1U', title: 'Sangmo Tony Sohn - Science Performance of JWST, STScI' },
+  { id: '6lLeEWzeG-M', title: 'KASSTA Space Signature Forum Panel' },
 ]
