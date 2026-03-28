@@ -30,19 +30,32 @@ export default function About() {
                 <p>Professor of Physics, University of Maryland</p>
               </div>
             </div>
-            <p>KASSTA was established as a 501(c)(3) nonprofit in 2024 to strengthen U.S.-Korea collaboration in aerospace fields. Since our founding, we have achieved significant milestones in bringing together the aerospace community.</p>
+            <p><em>Dear Fellow KASSTA Members,</em></p>
 
-            <h3>Recent Achievements</h3>
-            <ul>
-              <li>Monthly webinar series featuring astronauts, NASA scientists, and aerospace engineers</li>
-              <li>First AeroSpace Forum during UKC 2024 in San Francisco (August 2024)</li>
-              <li>Three-day workshop at Caltech in December 2024, jointly organized with Korean Space Science Society and NASA JPL, attracting 70 scientists</li>
-            </ul>
+            <p style={{ marginTop: 12 }}>The Korean American Aerospace Science and Technology Association (KASSTA) was established as a nonprofit organization in 2024 to promote collaboration between the U.S. and Korea in the fields of space and aeronautics. I am honored to serve as the Founding President of KASSTA, and I am pleased to report the enthusiastic launch of our association.</p>
 
-            <h3>Future Plans</h3>
-            <p>We are planning a second workshop in Korea (October 2025) and a third in the U.S. (August 2026), aiming to foster partnerships and enhance capabilities in space exploration for both nations.</p>
+            <p style={{ marginTop: 12 }}>KASSTA is exempt from federal income tax under Section 501(c)(3) of the Internal Revenue Code, and it is an Affiliated Professional Society (APS) of the Korean-American Scientists and Engineers Association (KSEA).</p>
 
-            <p style={{ marginTop: 16 }}>I invite you to take leadership roles, visit our website, and participate in UKC 2025 in Atlanta (August 5-9). Together, we are expanding opportunities for knowledge sharing, mentorship, and innovation while supporting the next generation of aerospace professionals.</p>
+            <p style={{ marginTop: 12 }}>KASSTA's monthly Webinar Series has featured inspiring talks from astronauts, NASA scientists, aerospace engineers in the industry, and researchers in academia, providing our community with valuable insights on cutting-edge research and industry trends.</p>
+
+            <p style={{ marginTop: 12 }}>Our first AeroSpace Forum was successfully held in August 2024 during the US-Korea Conference on Science, Technology, and Entrepreneurship (UKC 2024) in San Francisco, CA. The pre-conference tour to SETI and NASA Ames Research Center was inspiring and reinforced our commitment to engaging with the global scientific community.</p>
+
+            <p style={{ marginTop: 12 }}>Another significant event was the Workshop on AeroSpace Science and Technology held at Caltech in Pasadena, CA, in December 2024. This three-day workshop was organized jointly by KASSTA, the Korean Space Science Society (KSSS), and NASA JPL. The primary goal of the workshop was to foster and strengthen collaboration between the U.S. and Korea in the field of AeroSpace Science and Technology, which is one of Korea's 12 National Strategic Technologies.</p>
+
+            <p style={{ marginTop: 12 }}>Seventy scientists and engineers from Korea, the U.S., and Canada participated to discuss shared interests in space science and technology. The event included oral presentations as well as small group sessions that allowed participants to explore potential cooperation plans in greater detail. Attendees engaged in in-depth discussions to define the missions of each group, and action plans were summarized at the end of the workshop. Additionally, participants enjoyed a post-conference tour of NASA JPL.</p>
+
+            <p style={{ marginTop: 12 }}>Building on the success of the first workshop, KASSTA, KSSS, and JPL are planning to hold a second workshop in Korea in October 2025. A third workshop is tentatively scheduled for August 2026 in the U.S. in conjunction with the UKC. This series of workshops aims to foster new partnerships and joint initiatives that will enhance the scientific and technological capabilities of both Korea and the U.S., while also contributing to the global advancement of space exploration.</p>
+
+            <p style={{ marginTop: 12 }}>I encourage you to consider serving as officers and committee members for KASSTA. Please feel free to submit your nominations by contacting me or any of the Directors. I invite you to visit our website at <a href="https://kassta.ksea.org/">kassta.ksea.org</a>. When renewing your KSEA membership at <a href="http://www.ksea.org/">ksea.org</a>, make sure to select KASSTA as your APS to have the KASSTA membership fee waived.</p>
+
+            <p style={{ marginTop: 12 }}>Additionally, I hope many of you will attend UKC 2025 in Atlanta, GA, August 5 - 9, 2025. This annual conference brings together around 1,000 Korean scientists and engineers and features many engaging programs you may enjoy. We want KASSTA to remain connected to you. We are here to listen to your needs and to build a stronger organization that can benefit even more members.</p>
+
+            <p style={{ marginTop: 12 }}>As we move forward, we will focus on expanding opportunities for knowledge sharing, mentorship, and innovation. We are committed to fostering the next generation of aerospace professionals, supporting research collaborations, and providing valuable platforms for engagement.</p>
+
+            <p style={{ marginTop: 12 }}>I sincerely thank our members, supporters, and partners who have contributed to KASSTA's remarkable progress. Your dedication and enthusiasm drive our mission forward, and I look forward to the exciting advancements we will achieve together.</p>
+
+            <p style={{ marginTop: 20 }}>All the best,</p>
+            <p><strong>Eun-Suk Seo, Ph.D.</strong><br />President of KASSTA</p>
           </div>
         </div>
       </section>
