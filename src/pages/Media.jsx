@@ -137,6 +137,7 @@ export default function Media() {
           <p className="section-subtitle">Highlights from KASSTA events</p>
           <div className="card-grid">
             <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/ukc-forum-2025.jpg'} alt="2025 UKC AeroSpace Forum group photo" className="card-img" />
               <div className="card-body">
                 <h3>2025 UKC AeroSpace Forum</h3>
                 <p>Photos from the 2025 UKC AeroSpace Forum.</p>
