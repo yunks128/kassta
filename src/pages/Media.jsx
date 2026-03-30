@@ -29,29 +29,20 @@ export default function Media() {
           <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <a href="https://designrr.page/?id=482481&token=566029886&type=FP&h=4252" target="_blank" rel="noopener noreferrer">
-                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Issue 2025-1" className="card-img" style={{ objectFit: 'cover' }} />
+                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Vol.1 No.2" className="card-img" style={{ objectFit: 'cover' }} />
               </a>
               <div className="card-body">
-                <h3>Vol.2 No.1</h3>
-                <p>Issue 2025-1</p>
+                <h3>Vol.1 No.2</h3>
                 <a href="https://designrr.page/?id=482481&token=566029886&type=FP&h=4252" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Read Online</a>
               </div>
             </div>
             <div className="card" style={{ textAlign: 'center' }}>
               <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer">
-                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Issue 2024-2" className="card-img" style={{ objectFit: 'cover' }} />
+                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Vol.1 No.1" className="card-img" style={{ objectFit: 'cover' }} />
               </a>
               <div className="card-body">
-                <h3>Vol.1 No.2</h3>
-                <p>Issue 2024-2</p>
-                <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Download PDF</a>
-              </div>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Issue 2024-1" className="card-img" style={{ objectFit: 'cover' }} />
-              <div className="card-body">
                 <h3>Vol.1 No.1</h3>
-                <p>Issue 2024-1</p>
+                <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Download PDF</a>
               </div>
             </div>
           </div>
