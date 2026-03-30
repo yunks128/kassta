@@ -37,12 +37,12 @@ export default function Media() {
               </div>
             </div>
             <div className="card" style={{ textAlign: 'center' }}>
-              <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer">
+              <a href={import.meta.env.BASE_URL + 'kassta-letters-vol1-no1.pdf'} target="_blank" rel="noopener noreferrer">
                 <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Vol.1 No.1" className="card-img" style={{ objectFit: 'cover' }} />
               </a>
               <div className="card-body">
                 <h3>Vol.1 No.1</h3>
-                <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Download PDF</a>
+                <a href={import.meta.env.BASE_URL + 'kassta-letters-vol1-no1.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Download PDF</a>
               </div>
             </div>
           </div>
