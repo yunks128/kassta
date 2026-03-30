@@ -29,7 +29,7 @@ export default function Media() {
           <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <a href={import.meta.env.BASE_URL + 'kassta-letters-vol1-no2.pdf'} target="_blank" rel="noopener noreferrer">
-                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Vol.1 No.2" className="card-img" style={{ objectFit: 'cover' }} />
+                <img src={import.meta.env.BASE_URL + 'images/newsletter-vol1-no2.jpg'} alt="KASSTA Letters Vol.1 No.2" className="card-img" style={{ objectFit: 'cover' }} />
               </a>
               <div className="card-body">
                 <h3>Vol.1 No.2</h3>
