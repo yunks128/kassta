@@ -22,13 +22,37 @@ export default function Media() {
     <>
       <PageHeader title="Media & Publications" subtitle="News, articles, and resources" />
 
-      <section id="newsletter">
+      <section id="kassta-letters">
         <div className="container">
-          <div className="info-box" style={{ display: 'flex', gap: 24, alignItems: 'flex-start', flexWrap: 'wrap' }}>
-            <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Newsletter" style={{ width: 200, borderRadius: 8, flexShrink: 0 }} />
-            <div>
-              <h2>KASSTA Newsletter</h2>
-              <p>Our newsletter covering KASSTA activities, achievements, and upcoming events.</p>
+          <h2 className="section-title">KASSTA Letters</h2>
+          <p className="section-subtitle">Our publication covering KASSTA activities, achievements, and upcoming events</p>
+          <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))' }}>
+            <div className="card" style={{ textAlign: 'center' }}>
+              <a href="https://designrr.page/?id=482481&token=566029886&type=FP&h=4252" target="_blank" rel="noopener noreferrer">
+                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Issue 2025-1" className="card-img" style={{ objectFit: 'cover' }} />
+              </a>
+              <div className="card-body">
+                <h3>Vol.2 No.1</h3>
+                <p>Issue 2025-1</p>
+                <a href="https://designrr.page/?id=482481&token=566029886&type=FP&h=4252" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Read Online</a>
+              </div>
+            </div>
+            <div className="card" style={{ textAlign: 'center' }}>
+              <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer">
+                <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Issue 2024-2" className="card-img" style={{ objectFit: 'cover' }} />
+              </a>
+              <div className="card-body">
+                <h3>Vol.1 No.2</h3>
+                <p>Issue 2024-2</p>
+                <a href={import.meta.env.BASE_URL + 'kassta-letters-2024-2.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Download PDF</a>
+              </div>
+            </div>
+            <div className="card" style={{ textAlign: 'center' }}>
+              <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Issue 2024-1" className="card-img" style={{ objectFit: 'cover' }} />
+              <div className="card-body">
+                <h3>Vol.1 No.1</h3>
+                <p>Issue 2024-1</p>
+              </div>
             </div>
           </div>
         </div>

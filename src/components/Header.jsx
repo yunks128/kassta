@@ -19,7 +19,7 @@ const navItems = [
       { label: 'AeroSpace Forum 2025', to: '/activities#forum2025' },
       { label: 'Workshop 2024', to: '/activities#workshop2024' },
       { label: 'AeroSpace Forum 2024', to: '/activities#forum2024' },
-      { label: 'Newsletter', to: '/media#newsletter' },
+      { label: 'KASSTA Letters', to: '/media#kassta-letters' },
     ],
   },
   { label: 'Announcements', to: '/announcements' },
