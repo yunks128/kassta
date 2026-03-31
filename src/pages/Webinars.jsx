@@ -15,7 +15,7 @@ export default function Webinars() {
           <div className="event-list">
             {webinars.map((w, i) => (
               <div key={i} className="event-item" style={{ flexDirection: 'column' }}>
-                <div style={{ display: 'flex', gap: 24 }}>
+                <div className="event-inner" style={{ display: 'flex', gap: 24 }}>
                   <div className="event-date-box">
                     <span className="month">{w.date.month}</span>
                     <span className="day">{w.date.day}</span>

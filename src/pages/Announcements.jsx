@@ -14,7 +14,7 @@ export default function Announcements() {
           <div className="event-list">
             {announcements.map((a, i) => (
               <div key={i} className="event-item" style={{ flexDirection: 'column' }}>
-                <div style={{ display: 'flex', gap: 24 }}>
+                <div className="event-inner" style={{ display: 'flex', gap: 24 }}>
                   <div className="event-date-box">
                     <span className="month">{a.date.month}</span>
                     <span className="day">{a.date.day}</span>
