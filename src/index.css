@@ -763,13 +763,17 @@ footer {
 
   .event-item { flex-direction: column; gap: 12px; padding: 20px; }
   .event-date-box {
-    width: 100%;
+    width: auto;
     flex-direction: row;
     gap: 8px;
     padding: 10px 16px;
     justify-content: flex-start;
+    align-self: flex-start;
     border-radius: var(--radius-sm);
   }
+
+  .event-inner { flex-direction: column !important; gap: 12px !important; }
+  .event-inner .event-date-box { align-self: flex-start; }
 
   .info-box { padding: 24px 20px; }
 

@@ -36,6 +36,14 @@ npm run preview
 - Donation
 - Media
 
+## Contributing
+
+We welcome contributions! Please see our:
+
+- [Contributing Guide](CONTRIBUTING.md) - how to get involved
+- [Governance](GOVERNANCE.md) - project roles and decision-making
+- [License](LICENSE) - Apache 2.0
+
 ## Deployment
 
-The site is deployed to GitHub Pages with a custom domain (`kassta.ksea.org`) configured via the `public/CNAME` file.
+The site is automatically deployed to GitHub Pages on push to `main` via GitHub Actions. The custom domain (`kassta.ksea.org`) is configured via the `public/CNAME` file.
