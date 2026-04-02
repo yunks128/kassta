@@ -26,8 +26,8 @@ export default function Media() {
         <div className="container">
           <h2 className="section-title">KASSTA Letters</h2>
           <p className="section-subtitle">Our publication covering KASSTA activities, achievements, and upcoming events</p>
-          <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))' }}>
-            <div className="card" style={{ textAlign: 'center' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 24 }}>
+            <div className="card" style={{ textAlign: 'center', width: 240 }}>
               <a href={import.meta.env.BASE_URL + 'kassta-letters-vol1-no2.pdf'} target="_blank" rel="noopener noreferrer">
                 <img src={import.meta.env.BASE_URL + 'images/newsletter-vol1-no2.jpg'} alt="KASSTA Letters Vol.1 No.2" className="card-img" style={{ objectFit: 'cover' }} />
               </a>
@@ -36,7 +36,7 @@ export default function Media() {
                 <a href={import.meta.env.BASE_URL + 'kassta-letters-vol1-no2.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>Download PDF</a>
               </div>
             </div>
-            <div className="card" style={{ textAlign: 'center' }}>
+            <div className="card" style={{ textAlign: 'center', width: 240 }}>
               <a href={import.meta.env.BASE_URL + 'kassta-letters-vol1-no1.pdf'} target="_blank" rel="noopener noreferrer">
                 <img src={import.meta.env.BASE_URL + 'images/newsletter-2024.jpg'} alt="KASSTA Letters Vol.1 No.1" className="card-img" style={{ objectFit: 'cover' }} />
               </a>
