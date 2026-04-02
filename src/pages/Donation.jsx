@@ -35,9 +35,10 @@ export default function Donation() {
           <div className="info-box" style={{ textAlign: 'center', maxWidth: 700, margin: '40px auto 0' }}>
             <h2>Individual Donors</h2>
             <p style={{ marginTop: 12 }}>We gratefully acknowledge the generous support of our individual donors:</p>
-            <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
-              <li>Ruth Chiang Carter</li>
-            </ul>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 16 }}>
+              <img src={import.meta.env.BASE_URL + 'images/carter.png'} alt="Ruth Chiang Carter" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover', marginBottom: 8 }} />
+              <p><strong>Ruth Chiang Carter</strong></p>
+            </div>
           </div>
         </div>
       </section>
