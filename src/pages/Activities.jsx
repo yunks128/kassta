@@ -31,6 +31,7 @@ export default function Activities() {
             <p><strong>Supporting:</strong> Korea Aerospace Research Institute (KARA)</p>
             <p style={{ marginTop: 16 }}>This workshop brings together leading minds from across the globe to foster collaboration, share cutting-edge research, and forge partnerships advancing space exploration. Programming includes keynote addresses from international space agency officials, technical sessions on satellite systems and Earth observation, networking opportunities, and technology exhibitions.</p>
             <p style={{ marginTop: 12 }}><strong>Target Attendees:</strong> Researchers, scientists, industry representatives, and policymakers interested in space science and technology advancement.</p>
+            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2025 group photo" style={{ width: '100%', borderRadius: 8, marginTop: 20 }} />
           </div>
         </div>
       </section>
@@ -62,7 +63,6 @@ export default function Activities() {
             <p><strong>Location:</strong> California Institute of Technology (Caltech), Pasadena, CA</p>
             <p><strong>Organizers:</strong> KASSTA, Korean Space Science Society (KSSS), and NASA JPL</p>
             <p style={{ marginTop: 16 }}>This three-day workshop fostered collaboration between participating organizations, attracting 70 scientists from across the aerospace community to share research and forge new partnerships.</p>
-            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2024 group photo" style={{ width: '100%', borderRadius: 8, marginTop: 20 }} />
           </div>
           <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>Workshop 2024 Recordings</h3>
           <div className="yt-grid" style={{ marginTop: 20 }}>

@@ -31,6 +31,14 @@ export default function Donation() {
               <p><a href="mailto:kassta.fd@gmail.com"><strong>kassta.fd@gmail.com</strong></a></p>
             </div>
           </div>
+
+          <div className="info-box" style={{ textAlign: 'center', maxWidth: 700, margin: '40px auto 0' }}>
+            <h2>Individual Donors</h2>
+            <p style={{ marginTop: 12 }}>We gratefully acknowledge the generous support of our individual donors:</p>
+            <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
+              <li>Ruth Chiang Carter</li>
+            </ul>
+          </div>
         </div>
       </section>
     </>
