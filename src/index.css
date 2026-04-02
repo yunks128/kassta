@@ -205,13 +205,21 @@ nav > ul > li:hover .dropdown { display: block; }
   line-height: 1.8;
 }
 
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-buttons {
   display: flex;
   gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* ===== Buttons ===== */
