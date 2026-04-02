@@ -612,12 +612,14 @@ section.alt-bg { background: var(--light-bg); }
 
 /* ===== Donation ===== */
 .donation-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .donation-card {
+  width: 320px;
   background: var(--white);
   border-radius: var(--radius);
   padding: 36px;
