@@ -23,16 +23,18 @@ export default function Activities() {
       <section id="workshop2025">
         <div className="container">
           <img src={import.meta.env.BASE_URL + 'images/workshop2025-banner.jpg'} alt="Workshop 2025" style={{ width: '100%', borderRadius: 10, marginBottom: 24 }} />
-          <div className="info-box">
-            <h2>International Collaboration Workshop on Space Science &amp; Technology 2025</h2>
-            <p><strong>Dates:</strong> October 26-29, 2025</p>
-            <p><strong>Location:</strong> Jeju Shinhwa World, South Korea</p>
-            <p><strong>Organizers:</strong> Korean Space Science Society (KSSS), KASSTA, NASA Jet Propulsion Laboratory</p>
-            <p><strong>Supporting:</strong> Korea Aerospace Research Institute (KARA)</p>
-            <p style={{ marginTop: 16 }}>This workshop brings together leading minds from across the globe to foster collaboration, share cutting-edge research, and forge partnerships advancing space exploration. Programming includes keynote addresses from international space agency officials, technical sessions on satellite systems and Earth observation, networking opportunities, and technology exhibitions.</p>
-            <p style={{ marginTop: 12 }}><strong>Target Attendees:</strong> Researchers, scientists, industry representatives, and policymakers interested in space science and technology advancement.</p>
-            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2025 group photo" style={{ width: '100%', maxHeight: 400, objectFit: 'cover', borderRadius: 8, marginTop: 20 }} />
-            <a href="https://drive.google.com/file/d/1erQg0_AEMajc0YWEXkerXOUnhbn94NJ5/view" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 16 }}>Workshop Details</a>
+          <div className="info-box" style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2025 group photo" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <h2>International Collaboration Workshop on Space Science &amp; Technology 2025</h2>
+              <p><strong>Dates:</strong> October 26-29, 2025</p>
+              <p><strong>Location:</strong> Jeju Shinhwa World, South Korea</p>
+              <p><strong>Organizers:</strong> Korean Space Science Society (KSSS), KASSTA, NASA Jet Propulsion Laboratory</p>
+              <p><strong>Supporting:</strong> Korea Aerospace Research Institute (KARA)</p>
+              <p style={{ marginTop: 16 }}>This workshop brings together leading minds from across the globe to foster collaboration, share cutting-edge research, and forge partnerships advancing space exploration. Programming includes keynote addresses from international space agency officials, technical sessions on satellite systems and Earth observation, networking opportunities, and technology exhibitions.</p>
+              <p style={{ marginTop: 12 }}><strong>Target Attendees:</strong> Researchers, scientists, industry representatives, and policymakers interested in space science and technology advancement.</p>
+              <a href="https://drive.google.com/file/d/1erQg0_AEMajc0YWEXkerXOUnhbn94NJ5/view" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 16 }}>Workshop Details</a>
+            </div>
           </div>
         </div>
       </section>
@@ -273,9 +275,64 @@ export default function Activities() {
             <h2>UKC 2024 AeroSpace Forum</h2>
             <p><strong>Date:</strong> Friday, August 23, 2024</p>
             <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
-            <p><strong>Location:</strong> Cypress A</p>
-            <p style={{ marginTop: 16 }}>Part of the UKC 2024 KSEA Forum in San Francisco.</p>
-            <a href="https://photos.google.com/share/AF1QipNW72aT5WZk0DXcrEdlmWeVNoJDTfkXc4hof8D99GqOwfAna5f9MG4lCw1svAw1tA?key=d1c0ZUpMOGV4allHNG5uSnVlaW0xdHRaLWFRRUN3" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 16 }}>Photo Album</a>
+            <p><strong>Location:</strong> Cypress A, San Francisco, CA</p>
+            <p style={{ marginTop: 16 }}>Part of the UKC 2024 KSEA Forum in San Francisco. Jointly organized by KSEA and Korean-American AeroSpace Science and Technology Association (KASSTA).</p>
+
+            <p style={{ marginTop: 16 }}>This Forum serves as a comprehensive platform encompassing every facet of space and aeronautics related fields, from cutting-edge scientific advancements to breakthroughs in technology development and fostering global collaboration. By facilitating dialogue, innovation, and strategic partnerships, this forum aims to propel the boundaries of aerospace science and technology forward while advancing the collective understanding and utilization of space for the betterment of humanity.</p>
+
+            <h4 style={{ marginTop: 24, textAlign: 'center', fontStyle: 'italic' }}>Chair &amp; Co-Chair</h4>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 32, marginTop: 12 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 180 }}>
+                <img src={import.meta.env.BASE_URL + 'images/leaders/seo.jpg'} alt="Eun-Suk Seo" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+                <p style={{ marginTop: 8, textAlign: 'center' }}><strong>Eun-Suk Seo</strong><br />Chair<br />President of KASSTA<br />Professor of Physics<br />University of Maryland</p>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 180 }}>
+                <img src={import.meta.env.BASE_URL + 'images/speakers/hong.png'} alt="Choong Seon Hong" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+                <p style={{ marginTop: 8, textAlign: 'center' }}><strong>Choong Seon Hong</strong><br />Co-Chair<br />Provost<br />Kyung Hee University</p>
+              </div>
+            </div>
+
+            <h3 style={{ marginTop: 28, fontSize: '1.2rem' }}>Program Schedule</h3>
+            <table style={{ width: '100%', marginTop: 12, borderCollapse: 'collapse' }}>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>2:00 - 2:15 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Welcoming Remarks<br /><em>Eun-Suk Seo (Chair), Choong Seon Hong (Co-Chair)</em><br />Congratulatory Remarks<br /><em>Tae &ldquo;Tom&rdquo; Oh (President of KSEA), Tai Sik Lee (President of KOFST), Jong Uk &ldquo;James&rdquo; Park (President of KSSS)</em><br />KASSTA Award Presentation</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>2:15 - 2:35 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Keynote: The Search for Life Beyond Earth... Where it Stands and Why it Matters<br /><em>Bill Diamond (CEO of SETI Institute)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>2:35 - 2:55 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Keynote: The Search for Life on Mars<br /><em>Carol Stoker (NASA Ames Research Center)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>2:55 - 3:15 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Pioneering Practical Sustainable Aviation: The Impact of Hybrid Electric Propulsion on Advanced Air Mobility<br /><em>Jongwon &ldquo;JP&rdquo; Park (Archimedes Defense Inc.)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>3:15 - 3:35 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Status of Space Missions in Infrared and X-rays<br /><em>Jeonghee Rho (SETI Institute)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>3:35 - 3:50 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Space Economy (from a Space Transportation Technology Perspective)<br /><em>Chunyoung Park (Pyramid Space Inc.)</em></td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>3:50 - 4:00 PM</td>
+                  <td style={{ padding: '10px 8px' }}>Concluding Remarks and Photo Session</td>
+                </tr>
+              </tbody>
+            </table>
+            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 16 }}>
+              <a href="https://photos.google.com/share/AF1QipNW72aT5WZk0DXcrEdlmWeVNoJDTfkXc4hof8D99GqOwfAna5f9MG4lCw1svAw1tA?key=d1c0ZUpMOGV4allHNG5uSnVlaW0xdHRaLWFRRUN3" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Photo Album</a>
+            </div>
+          </div>
+          <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>Forum Recording</h3>
+          <div className="yt-grid" style={{ marginTop: 20 }}>
+            <YouTubeCard id="tDFwWUuWJRM" title="UKC 2024: KSEA AeroSpace Forum" />
+            <YouTubeCard id="Ul8VJhYePA0" title="UKC 2024: AeroSpace Forum Presentations" />
           </div>
         </div>
       </section>
