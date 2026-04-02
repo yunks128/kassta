@@ -172,6 +172,7 @@ nav > ul > li:hover .dropdown { display: block; }
   height: 700px;
   background: radial-gradient(circle, rgba(37,116,169,0.15) 0%, transparent 70%);
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .hero::after {
@@ -183,6 +184,7 @@ nav > ul > li:hover .dropdown { display: block; }
   height: 500px;
   background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .hero h1 {
@@ -209,6 +211,7 @@ nav > ul > li:hover .dropdown { display: block; }
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  z-index: 1;
 }
 
 /* ===== Buttons ===== */
