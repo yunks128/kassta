@@ -24,7 +24,7 @@ export default function Activities() {
         <div className="container">
           <img src={import.meta.env.BASE_URL + 'images/workshop2025-banner.jpg'} alt="Workshop 2025" style={{ width: '100%', borderRadius: 10, marginBottom: 24 }} />
           <div className="info-box" style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
-            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2025 group photo" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
+            <img src={import.meta.env.BASE_URL + 'images/workshop-group.jpg'} alt="Workshop 2025 group photo" style={{ width: 200, maxHeight: 300, objectFit: 'cover', borderRadius: 8, flexShrink: 0 }} />
             <div style={{ flex: 1, minWidth: 280 }}>
               <h2>International Collaboration Workshop on Space Science &amp; Technology 2025</h2>
               <p><strong>Dates:</strong> October 26-29, 2025</p>
