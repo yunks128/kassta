@@ -1,4 +1,4 @@
-export default function EventItem({ date, title, meta, desc, link }) {
+export default function EventItem({ date, title, meta, desc, link, linkLabel = 'Register' }) {
   return (
     <div className="event-item">
       <div className="event-date-box">
@@ -12,7 +12,7 @@ export default function EventItem({ date, title, meta, desc, link }) {
         <p>{desc}</p>
         {link && (
           <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 12, display: 'inline-block', fontSize: '0.85rem', padding: '8px 20px' }}>
-            Register
+            {linkLabel}
           </a>
         )}
       </div>

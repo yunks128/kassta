@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import YouTubeCard from '../components/YouTubeCard'
-import { workshop2024Videos, forumVideos } from '../data/content'
+import { workshop2024Videos, forumVideos, ukc2026Videos } from '../data/content'
 
 export default function Activities() {
   const { hash } = useLocation()
@@ -20,7 +20,89 @@ export default function Activities() {
     <>
       <PageHeader title="Activities" subtitle="Workshops, Forums, and Events" />
 
-      <section id="workshop2025">
+      <section id="signatureforum2026">
+        <div className="container">
+          <img src={import.meta.env.BASE_URL + 'images/ukc-forum-2026.jpg'} alt="UKC 2026 AeroSpace Signature Symposium group photo" style={{ width: '100%', maxWidth: 900, display: 'block', margin: '0 auto 24px', borderRadius: 10 }} />
+          <div className="info-box">
+            <h2>UKC 2026 AeroSpace Signature Symposium &mdash; Shaping the Future of Space</h2>
+            <p><strong>Date:</strong> Thursday, August 6, 2026</p>
+            <p><strong>Time:</strong> 10:15 AM - 12:00 PM</p>
+            <p><strong>Location:</strong> International Ballroom, Omni Orlando Resort at ChampionsGate, FL</p>
+            <p style={{ marginTop: 16 }}>Part of UKC 2026, the 39th US-Korea Conference on Science, Technology and Entrepreneurship, held August 5&ndash;8, 2026 in Orlando, Florida under the theme &ldquo;A Convergence of Dreams and Execution.&rdquo;</p>
+            <p style={{ marginTop: 16 }}>The AeroSpace Signature Symposium offers a comprehensive perspective on the future of space through advances in human spaceflight, soft robotics, aerospace engineering, and next-generation space computing. Bringing together leading experts from academia, industry, and national laboratories, the forum highlights innovative technologies and interdisciplinary approaches that are redefining the capabilities of space systems and enabling the next era of exploration beyond Earth orbit. The forum is designed to inspire new partnerships and strategic collaborations while providing a forward-looking view of how scientific discovery and engineering innovation can collectively expand humanity&rsquo;s presence and capabilities in space.</p>
+            <p style={{ marginTop: 12 }}><strong>Organizers:</strong> KSEA &mdash; Korean-American Scientists and Engineers Association; KASSTA &mdash; Korean American AeroSpace Science and Technology Association</p>
+
+            <h4 style={{ marginTop: 24, textAlign: 'center', fontStyle: 'italic' }}>Chair</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 8 }}>
+              <img src={import.meta.env.BASE_URL + 'images/leaders/seo.jpg'} alt="Eun-Suk Seo" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+              <p style={{ marginTop: 8, textAlign: 'center' }}><strong>Eun-Suk Seo</strong><br />President of KASSTA<br />Professor of Physics<br />University of Maryland</p>
+            </div>
+
+            <h4 style={{ marginTop: 24, textAlign: 'center', fontStyle: 'italic' }}>Speakers and Panelists</h4>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 24, marginTop: 12 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 160 }}>
+                <img src={import.meta.env.BASE_URL + 'images/leaders/yi.jpg'} alt="Soyeon Yi" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+                <p style={{ marginTop: 8, textAlign: 'center', fontSize: '0.9rem' }}><strong>Soyeon Yi</strong><br />Astronaut<br />GBD at SPEX, Inc.</p>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 160 }}>
+                <img src={import.meta.env.BASE_URL + 'images/speakers/lee_dy.png'} alt="Dae Young Lee" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+                <p style={{ marginTop: 8, textAlign: 'center', fontSize: '0.9rem' }}><strong>Dae Young Lee</strong><br />Professor<br />Department of Aerospace Engineering<br />KAIST</p>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 160 }}>
+                <img src={import.meta.env.BASE_URL + 'images/leaders/chae.jpg'} alt="Eun Jung Chae" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+                <p style={{ marginTop: 8, textAlign: 'center', fontSize: '0.9rem' }}><strong>Eun Jung Chae</strong><br />Professor<br />Mechanical &amp; Aerospace Engineering<br />California State University, Long Beach</p>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 160 }}>
+                <img src={import.meta.env.BASE_URL + 'images/leaders/yun.jpg'} alt="Kyongsik Yun" style={{ width: 120, height: 120, borderRadius: '50%', objectFit: 'cover' }} />
+                <p style={{ marginTop: 8, textAlign: 'center', fontSize: '0.9rem' }}><strong>Kyongsik Yun</strong><br />Technologist<br />NASA Jet Propulsion Laboratory</p>
+              </div>
+            </div>
+
+            <h3 style={{ marginTop: 28, fontSize: '1.2rem' }}>Program Schedule</h3>
+            <table style={{ width: '100%', marginTop: 12, borderCollapse: 'collapse' }}>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>10:15 AM</td>
+                  <td style={{ padding: '10px 8px' }}>Opening Remarks &mdash; <em>Eun-Suk Seo (Chair)</em><br />Welcoming Remarks &mdash; <em>Yong-Kyu Yoon (President of KSEA)</em><br />Congratulatory Remarks &mdash; <em>In Kyu Park (Vice Minister for Science, Technology and Innovation, Ministry of Science and ICT); Chang-Jeon Hwang (Vice President, Korea Aerospace Research Institute, KARI)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>10:25 AM</td>
+                  <td style={{ padding: '10px 8px' }}>Healthcare Challenges of Space Flight<br /><em>Soyeon Yi (Astronaut, GBD at SPEX, Inc.)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>10:45 AM</td>
+                  <td style={{ padding: '10px 8px' }}>Reliability through Softness: A Soft Robotics Approach to Space Exploration<br /><em>Dae Young Lee (Department of Aerospace Engineering, KAIST)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>11:05 AM</td>
+                  <td style={{ padding: '10px 8px' }}>Aerodynamic Performance of the Next Generation Aircraft/Spacecraft<br /><em>Eun Jung Chae (Department of Mechanical and Aerospace Engineering, California State University, Long Beach)</em></td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>11:25 AM</td>
+                  <td style={{ padding: '10px 8px' }}>Next-Generation Space Processors: HPSC and Hybrid Co-Processor Architectures<br /><em>Kyongsik Yun (Technologist, NASA JPL)</em></td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '10px 8px', whiteSpace: 'nowrap', verticalAlign: 'top', fontWeight: 'bold' }}>11:45 AM</td>
+                  <td style={{ padding: '10px 8px' }}>Concluding Remarks, Awards and Photo Session</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 16 }}>
+              <a href="https://ukc2026.ksea.org/aerospace" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Symposium Page</a>
+              <a href={import.meta.env.BASE_URL + 'files/UKC-2026-AeroSpace-Signature-Symposium.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>Program Details (PDF)</a>
+            </div>
+          </div>
+          <h3 className="section-title" style={{ marginTop: 40, fontSize: '1.3rem' }}>UKC 2026 Recordings</h3>
+          <div className="yt-grid" style={{ marginTop: 20 }}>
+            {ukc2026Videos.map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="alt-bg" id="workshop2025">
         <div className="container">
           <img src={import.meta.env.BASE_URL + 'images/workshop2025-banner.jpg'} alt="Workshop 2025" style={{ width: '60%', display: 'block', margin: '0 auto 24px', borderRadius: 10 }} />
           <div className="info-box" style={{ display: 'flex', gap: 28, alignItems: 'flex-start', flexWrap: 'wrap' }}>
@@ -39,7 +121,7 @@ export default function Activities() {
         </div>
       </section>
 
-      <section className="alt-bg" id="forum2025">
+      <section id="forum2025">
         <div className="container">
           <div className="info-box">
             <h2>UKC 2025 AeroSpace Forum</h2>
@@ -100,7 +182,7 @@ export default function Activities() {
         </div>
       </section>
 
-      <section id="signatureforum2025">
+      <section className="alt-bg" id="signatureforum2025">
         <div className="container">
           <div className="info-box">
             <h2>UKC 2025 Signature Forum &mdash; Shaping the Future of Space</h2>

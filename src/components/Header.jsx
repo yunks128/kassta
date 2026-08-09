@@ -15,6 +15,7 @@ const navItems = [
     label: 'Activities', to: '/activities',
     children: [
       { label: 'Webinar Series', to: '/webinars' },
+      { label: 'UKC 2026 Signature Symposium', to: '/activities#signatureforum2026' },
       { label: 'Workshop 2025', to: '/activities#workshop2025' },
       { label: 'AeroSpace Forum 2025', to: '/activities#forum2025' },
       { label: 'Workshop 2024', to: '/activities#workshop2024' },

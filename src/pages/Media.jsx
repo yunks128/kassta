@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import YouTubeCard from '../components/YouTubeCard'
-import { webinars, workshop2024Videos, forumVideos, otherTalks } from '../data/content'
+import { webinars, workshop2024Videos, forumVideos, ukc2026Videos, memberVideos, activityVideos, otherTalks } from '../data/content'
 
 export default function Media() {
   const { hash } = useLocation()
@@ -66,7 +66,31 @@ export default function Media() {
           <h2 className="section-title">Workshop & Forum Recordings</h2>
           <p className="section-subtitle">Event recordings from workshops and UKC forums</p>
           <div className="yt-grid">
-            {[...forumVideos, ...workshop2024Videos.slice(0, 3)].map(v => (
+            {[...ukc2026Videos, ...forumVideos, ...workshop2024Videos.slice(0, 2)].map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="alt-bg" id="member-spotlights">
+        <div className="container">
+          <h2 className="section-title">Member Spotlights</h2>
+          <p className="section-subtitle">Conversations with KASSTA members and collaborators</p>
+          <div className="yt-grid">
+            {memberVideos.map(v => (
+              <YouTubeCard key={v.id} id={v.id} title={v.title} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <h2 className="section-title">Activity Highlights</h2>
+          <p className="section-subtitle">Outreach, site visits, and community events</p>
+          <div className="yt-grid">
+            {activityVideos.map(v => (
               <YouTubeCard key={v.id} id={v.id} title={v.title} />
             ))}
           </div>
@@ -136,6 +160,14 @@ export default function Media() {
           <h2 className="section-title">Photo Gallery</h2>
           <p className="section-subtitle">Highlights from KASSTA events</p>
           <div className="card-grid">
+            <div className="card">
+              <img src={import.meta.env.BASE_URL + 'images/ukc-forum-2026.jpg'} alt="2026 UKC AeroSpace Signature Symposium group photo" className="card-img" />
+              <div className="card-body">
+                <h3>2026 UKC AeroSpace Signature Symposium</h3>
+                <p>&ldquo;Shaping the Future of Space&rdquo; at UKC 2026, Omni Orlando Resort at ChampionsGate, August 6, 2026.</p>
+                <Link to="/activities#signatureforum2026" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>View Details</Link>
+              </div>
+            </div>
             <div className="card">
               <img src={import.meta.env.BASE_URL + 'images/ukc-forum-2025.jpg'} alt="2025 UKC AeroSpace Forum group photo" className="card-img" />
               <div className="card-body">

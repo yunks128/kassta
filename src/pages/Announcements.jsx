@@ -26,7 +26,7 @@ export default function Announcements() {
                     <p>{a.desc}</p>
                     {a.link && (
                       <a href={a.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 12, display: 'inline-block', fontSize: '0.85rem', padding: '8px 20px' }}>
-                        Register
+                        {a.linkLabel || 'Register'}
                       </a>
                     )}
                   </div>

@@ -27,6 +27,18 @@ export const leaders = {
 // Announcements with linked YouTube videos
 export const announcements = [
   {
+    date: { month: 'AUG', day: '6', year: '2026' },
+    title: 'UKC 2026 AeroSpace Signature Symposium — Shaping the Future of Space',
+    meta: '10:15 AM - 12:00 PM | International Ballroom, Omni Orlando Resort at ChampionsGate, FL',
+    desc: 'Chair: Eun-Suk Seo (KASSTA President). Speakers: Soyeon Yi (Astronaut, SPEX) - Healthcare Challenges of Space Flight; Dae Young Lee (KAIST) - Reliability through Softness: A Soft Robotics Approach to Space Exploration; Eun Jung Chae (CSU Long Beach) - Aerodynamic Performance of the Next Generation Aircraft/Spacecraft; Kyongsik Yun (NASA JPL) - Next-Generation Space Processors: HPSC and Hybrid Co-Processor Architectures',
+    link: 'https://ukc2026.ksea.org/aerospace',
+    linkLabel: 'Symposium Page',
+    videos: [
+      { id: 'Pv9E0NDTkAM', title: 'UKC 2026 Day 1' },
+      { id: 'ZNssy875Dao', title: 'UKC 2026 Speaker: Dr. Dae Young Lee, KAIST' },
+    ],
+  },
+  {
     date: { month: 'APR', day: '24', year: '2026' },
     title: 'KASSTA Regular Meeting',
     meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
@@ -168,6 +180,7 @@ export const webinars = [
     videos: [
       { id: 'JLyi1Lcw3lU', title: 'Jason Hyon - Quantum Space Innovation Center (QSIC), NASA JPL' },
       { id: '9xNTg-uyUBA', title: 'Jae-Hung Han - Space Service and Manufacturing, KAIST' },
+      { id: 'L9qln0gDc6w', title: 'Dr. Jae Hyung Han, KAIST' },
     ],
   },
   {
@@ -185,6 +198,7 @@ export const webinars = [
     speakers: 'Jae Hwan Kang (Caltech) - SPHEREx near-infrared all-sky survey; Chunyoung Park (Pyramid Space) - Advanced propulsion and space economy',
     videos: [
       { id: 'oPBI_5LMNmA', title: 'Jae Hwan Kang - SPHEREx Observatory, Caltech' },
+      { id: 'jahs7lkJKRs', title: 'Chunyoung Park - Advanced Propulsion & the Space Economy, Pyramid Space' },
       { id: 'l0lyUpFrF0A', title: 'Soyeon Yi - Astronaut Experience' },
     ],
   },
@@ -206,17 +220,51 @@ export const webinars = [
       { id: 'fDqZ7djh9fM', title: 'Regina Lee - Near-Earth Collision Detection, York University' },
     ],
   },
+  {
+    date: { month: 'OCT', day: '19', year: '2024' },
+    title: 'Infrared Astronomy & Cryogenic Flow Boiling',
+    speakers: 'Jeonghee Rho (SETI Institute) - Status of Infrared and X-ray Space Missions; Sunjae Kim (Purdue University) - Cryogenic Flow Boiling Physics in Terrestrial, Partial, and Microgravity Conditions',
+    videos: [
+      { id: 'MEjV-Wsb4oo', title: 'Tech Webinar - Jeonghee Rho & Sunjae Kim, Oct 19, 2024' },
+    ],
+  },
+  {
+    date: { month: 'MAY', day: '19', year: '2024' },
+    title: 'KASSTA Webinar',
+    speakers: 'KASSTA monthly technical webinar',
+    videos: [
+      { id: 'nzTEKw3x3vU', title: 'KASSTA Webinar - May 19, 2024' },
+    ],
+  },
+  {
+    date: { month: 'APR', day: '21', year: '2024' },
+    title: 'Mindfulness from Weightlessness & JWST Science',
+    speakers: 'Soyeon Yi (First astronaut of South Korea) - Mindfulness from Weightlessness; Tony S. Sohn (STScI) - The Science Performance of the James Webb Space Telescope',
+    videos: [
+      { id: 'OeGHRZ6fq5I', title: 'KASSTA-KSEA Webinar - April 21, 2024' },
+    ],
+  },
 ]
 
 // Workshop 2024 recordings
 export const workshop2024Videos = [
+  { id: 'MshjVWphn2Q', title: 'KOR-US Joint Workshop on Space Science & Technology, Dec 15-17, 2024' },
   { id: 'GA1y1e3ISd8', title: 'KOR-US Joint Workshop Day 1 - Opening Introduction' },
   { id: 'okY_ui8fKxI', title: 'KOR-US Joint Workshop Day 1 - Sessions' },
+  { id: 'Ucki2cHFbwk', title: 'KOR-US Joint Workshop Day 1 - Dinner & Award' },
   { id: 'Wqzw2f5sWKo', title: 'KOR-US Joint Workshop Day 2' },
   { id: 'wyTP0GFpedY', title: 'KOR-US Joint Workshop Day 2 - Presentations' },
+  { id: '8HDouBD8INo', title: 'KOR-US Joint Workshop Day 2 - Presentations (Updated)' },
   { id: '_fpyavkr7Pg', title: 'KOR-US Joint Workshop Day 3 - NASA/JPL Tour' },
   { id: 'HTGBlec73OI', title: 'KOR-US Joint Workshop - NASA/JPL Tour' },
   { id: 'InT9xTLjblI', title: 'KOR-US Joint Workshop - Opening, Dec 15, 2024' },
+  { id: 'bfkEOjwfTVk', title: 'Sunjae Kim - Cryogenic Flow Boiling Physics, Purdue' },
+]
+
+// UKC 2026 recordings
+export const ukc2026Videos = [
+  { id: 'Pv9E0NDTkAM', title: 'UKC 2026 Day 1' },
+  { id: 'ZNssy875Dao', title: 'UKC 2026 Speaker: Dr. Dae Young Lee, KAIST' },
 ]
 
 // UKC Forum recordings
@@ -224,6 +272,58 @@ export const forumVideos = [
   { id: 'oJI6Tjf9_Fo', title: 'UKC 2025: KSEA AeroSpace Forum' },
   { id: 'GTKPsRFTQAE', title: 'UKC 2025: Space Signature Forum' },
   { id: 'rlco7rvLDow', title: 'UKC Signature Space Forum: Dr. Young Sil Kwak, KASI' },
+]
+
+// Career-stage testimonials shown on the home page.
+//
+// ⚠️ PLACEHOLDER COPY — the quotes below are illustrative, written from what
+// KASSTA actually offers (monthly webinars, UKC forums, KOR-US workshops,
+// mentoring, collaboration). They are attributed to a career stage rather than
+// a person on purpose: do not publish a quote under a real member's name until
+// that member has given it. Replace `quote`/`name` with real submissions as
+// they come in, and add `img` (a file in public/images/testimonials/) if you
+// want headshots.
+export const testimonials = [
+  {
+    stage: 'Graduate Student',
+    quote: 'The monthly webinars were the first place I heard directly from engineers at NASA, KARI, and KAIST about what they actually work on. It turned a vague interest in aerospace into a concrete list of labs, missions, and people to reach out to.',
+    name: 'Ph.D. Student',
+    role: 'Aerospace Engineering',
+  },
+  {
+    stage: 'Early Career',
+    quote: 'Presenting at the UKC AeroSpace Forum gave me an audience of exactly the researchers I wanted to reach on both sides of the Pacific. The conversations afterward led to a collaboration I could not have started from a cold email.',
+    name: 'Postdoctoral Researcher',
+    role: 'Planetary & Space Science',
+  },
+  {
+    stage: 'Industry & National Labs',
+    quote: 'KASSTA is the shortest path I have found between U.S. and Korean aerospace programs. The KOR-US joint workshops put agency, university, and industry people in the same room for three days, and the follow-up is real.',
+    name: 'Engineer',
+    role: 'Aerospace Industry / National Laboratory',
+  },
+  {
+    stage: 'Senior & Faculty',
+    quote: 'What keeps me involved is the pipeline. Chairing sessions and mentoring at UKC lets me hand younger researchers the introductions that took me a decade to build, and the community keeps growing because of it.',
+    name: 'Professor & Principal Investigator',
+    role: 'University Research Group',
+  },
+]
+
+// Member spotlight interviews
+export const memberVideos = [
+  { id: 'v0tytPBjMxs', title: 'Dr. Eun-Suk Seo - President of KASSTA' },
+  { id: 'JKlR04JRZvU', title: 'Dr. Yaeji Kim - Deputy Executive Director, KASSTA' },
+  { id: 'AqeUhLnG2M4', title: 'Dr. Michael Kelley & Dr. Ludmilla Kolokolova, University of Maryland' },
+  { id: 'KarlFs5zXU8', title: 'Dr. Sangmo Tony Sohn, STScI' },
+]
+
+// Community outreach and activity highlights
+export const activityVideos = [
+  { id: 'rpC3SBF9Sk8', title: 'Beyond the Cradle - Aurelia Institute at MIT Media Lab, April 2026' },
+  { id: '7f9NNwmD0CU', title: 'Starship Flight 12 V3 Launch - Narration by 항성, 안될과학' },
+  { id: 'x8FmsFZgjoU', title: 'KASSTA at SETI Institute and NASA Ames' },
+  { id: '9hqmQYnW5yY', title: 'AeroSpace Forum Brief at UKC 2024' },
 ]
 
 // Other featured talks
