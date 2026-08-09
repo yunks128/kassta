@@ -72,8 +72,9 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div style={{ textAlign: 'center', marginTop: 40 }}>
+          <div style={{ textAlign: 'center', marginTop: 40, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/membership" className="btn btn-primary">Join KASSTA</Link>
+            <Link to="/students" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>Students &mdash; Join Free</Link>
           </div>
         </div>
       </section>

@@ -23,6 +23,7 @@ const navItems = [
       { label: 'KASSTA Letters', to: '/media#kassta-letters' },
     ],
   },
+  { label: 'Students', to: '/students' },
   { label: 'Announcements', to: '/announcements' },
   { label: 'Donation', to: '/donation' },
   { label: 'Leadership', to: '/leadership' },

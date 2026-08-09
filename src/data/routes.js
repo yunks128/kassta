@@ -58,6 +58,13 @@ export const routes = [
     priority: '0.6',
   },
   {
+    path: '/students',
+    title: 'For Students — Free Membership, Mentorship, and Conferences | KASSTA',
+    description:
+      'Free KASSTA membership for undergraduates and $15/year for graduate students. Monthly aerospace webinars, the chance to present at the UKC AeroSpace Forum, SEED and FIRE, KSEA scholarships, and 40+ recorded talks.',
+    priority: '0.9',
+  },
+  {
     path: '/membership',
     title: 'Membership — Join KASSTA',
     description:

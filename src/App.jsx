@@ -10,6 +10,7 @@ import Leadership from './pages/Leadership'
 import Membership from './pages/Membership'
 import Donation from './pages/Donation'
 import Media from './pages/Media'
+import Students from './pages/Students'
 import NotFound from './pages/NotFound'
 import useDocumentMeta from './hooks/useDocumentMeta'
 
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/membership" element={<Membership />} />
           <Route path="/donation" element={<Donation />} />
           <Route path="/media" element={<Media />} />
+          <Route path="/students" element={<Students />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
