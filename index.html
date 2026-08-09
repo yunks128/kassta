@@ -3,9 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KASSTA - Korean American AeroSpace Science and Technology Association</title>
-    <link rel="icon" href="/kassta/favicon.ico" />
-    <link rel="apple-touch-icon" href="/kassta/apple-touch-icon.png" />
+    <title>KASSTA — Korean American AeroSpace Science and Technology Association</title>
+    <meta name="description" content="KASSTA is a 501(c)(3) nonprofit advancing U.S.–Korea collaboration in aerospace science and technology through monthly webinars, international workshops, and the UKC AeroSpace Forum." />
+    <link rel="canonical" href="https://kassta.ksea.org/" />
+    <meta name="theme-color" content="#0a1628" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KASSTA" />
+    <meta property="og:title" content="KASSTA — Korean American AeroSpace Science and Technology Association" />
+    <meta property="og:description" content="KASSTA is a 501(c)(3) nonprofit advancing U.S.–Korea collaboration in aerospace science and technology through monthly webinars, international workshops, and the UKC AeroSpace Forum." />
+    <meta property="og:url" content="https://kassta.ksea.org/" />
+    <meta property="og:image" content="https://kassta.ksea.org/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KASSTA — Korean American AeroSpace Science and Technology Association" />
+    <meta name="twitter:description" content="KASSTA is a 501(c)(3) nonprofit advancing U.S.–Korea collaboration in aerospace science and technology through monthly webinars, international workshops, and the UKC AeroSpace Forum." />
+    <meta name="twitter:image" content="https://kassta.ksea.org/images/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Korean American AeroSpace Science and Technology Association",
+        "alternateName": "KASSTA",
+        "url": "https://kassta.ksea.org/",
+        "logo": "https://kassta.ksea.org/images/logo.png",
+        "foundingDate": "2024",
+        "description": "A 501(c)(3) nonprofit advancing U.S.-Korea collaboration in aerospace science and technology.",
+        "email": "kassta.fd@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "19213 Olney Mill Rd.",
+          "addressLocality": "Olney",
+          "addressRegion": "MD",
+          "postalCode": "20832",
+          "addressCountry": "US"
+        },
+        "sameAs": ["https://www.youtube.com/@KASSTA_USA"],
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Korean-American Scientists and Engineers Association",
+          "url": "https://www.ksea.org/"
+        }
+      }
+    </script>
+
+    <!--
+      The site used HashRouter until Aug 2026, so links shared before then look like
+      https://kassta.ksea.org/#/activities. Rewrite those to real paths before React
+      mounts so old links, bookmarks, and newsletter URLs keep working.
+    -->
+    <script>
+      (function () {
+        var h = window.location.hash
+        if (h.indexOf('#/') === 0) {
+          var rest = h.slice(1)
+          // "#/activities#signatureforum2026" -> path "/activities", anchor "#signatureforum2026"
+          var cut = rest.indexOf('#', 1)
+          var path = cut === -1 ? rest : rest.slice(0, cut)
+          var anchor = cut === -1 ? '' : rest.slice(cut)
+          window.history.replaceState(null, '', path + window.location.search + anchor)
+        }
+      })()
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />

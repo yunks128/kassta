@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Official website for the Korean American AeroSpace Science and Technology Association (KASSTA)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "keywords": ["kassta", "ksea", "aerospace", "korean-american", "community"],
