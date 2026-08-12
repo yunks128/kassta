@@ -35,7 +35,9 @@ export const announcements = [
     linkLabel: 'Symposium Page',
     videos: [
       { id: 'Pv9E0NDTkAM', title: 'UKC 2026 Day 1' },
-      { id: 'ZNssy875Dao', title: 'UKC 2026 Speaker: Dr. Dae Young Lee, KAIST' },
+      { id: 'LZUfi_zoBCg', title: 'UKC 2026: Aerospace & Ocean Forum (Beyond the Earth)' },
+      { id: 'NfXpjygJUl8', title: 'UKC 2026 Signature Forum: Dr. Dae Young Lee, KAIST (full talk)' },
+      { id: 'ZNssy875Dao', title: 'UKC 2026 Speaker Preview: Dr. Dae Young Lee, KAIST' },
     ],
   },
   {
@@ -264,7 +266,9 @@ export const workshop2024Videos = [
 // UKC 2026 recordings
 export const ukc2026Videos = [
   { id: 'Pv9E0NDTkAM', title: 'UKC 2026 Day 1' },
-  { id: 'ZNssy875Dao', title: 'UKC 2026 Speaker: Dr. Dae Young Lee, KAIST' },
+  { id: 'LZUfi_zoBCg', title: 'UKC 2026: Aerospace & Ocean Forum (Beyond the Earth)' },
+  { id: 'NfXpjygJUl8', title: 'UKC 2026 Signature Forum: Dr. Dae Young Lee, KAIST (full talk)' },
+  { id: 'ZNssy875Dao', title: 'UKC 2026 Speaker Preview: Dr. Dae Young Lee, KAIST' },
 ]
 
 // UKC Forum recordings
@@ -320,6 +324,7 @@ export const memberVideos = [
 
 // Community outreach and activity highlights
 export const activityVideos = [
+  { id: 'o97EPOqTlIc', title: 'Kennedy Space Center, Orlando, Florida - UKC 2026 Visit' },
   { id: 'rpC3SBF9Sk8', title: 'Beyond the Cradle - Aurelia Institute at MIT Media Lab, April 2026' },
   { id: '7f9NNwmD0CU', title: 'Starship Flight 12 V3 Launch - Narration by 항성, 안될과학' },
   { id: 'x8FmsFZgjoU', title: 'KASSTA at SETI Institute and NASA Ames' },
