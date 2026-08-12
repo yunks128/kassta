@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <h4>Quick Links</h4>
             <Link to="/">Home</Link>
-            <Link to="/announcements">Announcements</Link>
+            <Link to="/announcements">News &amp; Events</Link>
             <Link to="/about">About</Link>
             <Link to="/leadership">Leadership</Link>
             <Link to="/activities">Activities</Link>

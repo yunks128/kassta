@@ -5,7 +5,8 @@ import { Link, useLocation } from 'react-router-dom'
 // are, what we do, what we've published, then the two asks (join, give) last.
 const navItems = [
   { label: 'Home', to: '/' },
-  { label: 'Announcements', to: '/announcements' },
+  // Label is 'News & Events'; the path stays /announcements so indexed URLs hold.
+  { label: 'News & Events', to: '/announcements' },
   {
     label: 'About', to: '/about',
     children: [

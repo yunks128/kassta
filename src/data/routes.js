@@ -45,7 +45,7 @@ export const routes = [
   },
   {
     path: '/announcements',
-    title: 'Announcements — Upcoming Events and News | KASSTA',
+    title: 'News & Events — Upcoming Webinars and Meetings | KASSTA',
     description:
       'Upcoming KASSTA webinars, meetings, and conference sessions, with registration links and recordings of past events.',
     priority: '0.8',

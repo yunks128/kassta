@@ -8,7 +8,7 @@ export default function Announcements() {
 
   return (
     <>
-      <PageHeader title="Announcements" subtitle="Latest news and upcoming events" />
+      <PageHeader title="News & Events" subtitle="Latest news and upcoming events" />
       <section>
         <div className="container">
           <div className="event-list">
