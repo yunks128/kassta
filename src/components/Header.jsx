@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
+// Ordered by visitor intent, not alphabetically: what's happening now, who we
+// are, what we do, what we've published, then the two asks (join, give) last.
 const navItems = [
   { label: 'Home', to: '/' },
+  { label: 'Announcements', to: '/announcements' },
   {
     label: 'About', to: '/about',
     children: [
       { label: "President's Message", to: '/about' },
+      { label: 'Leadership', to: '/leadership' },
       { label: 'Bylaws', to: '/about#bylaws' },
       { label: 'Partners & Sponsors', to: '/about#partners' },
     ],
@@ -20,15 +24,21 @@ const navItems = [
       { label: 'AeroSpace Forum 2025', to: '/activities#forum2025' },
       { label: 'Workshop 2024', to: '/activities#workshop2024' },
       { label: 'AeroSpace Forum 2024', to: '/activities#forum2024' },
+    ],
+  },
+  {
+    label: 'Media', to: '/media',
+    children: [
+      { label: 'Video Recordings', to: '/media#recordings' },
+      { label: 'Member Spotlights', to: '/media#member-spotlights' },
       { label: 'KASSTA Letters', to: '/media#kassta-letters' },
+      { label: 'Media Coverage', to: '/media#media-coverage' },
+      { label: 'Photo Gallery', to: '/media#photo-gallery' },
     ],
   },
   { label: 'Students', to: '/students' },
-  { label: 'Announcements', to: '/announcements' },
-  { label: 'Donation', to: '/donation' },
-  { label: 'Leadership', to: '/leadership' },
-  { label: 'Media', to: '/media' },
   { label: 'Membership', to: '/membership' },
+  { label: 'Donation', to: '/donation' },
 ]
 
 export default function Header() {
@@ -36,10 +46,13 @@ export default function Header() {
   const [openDd, setOpenDd] = useState(null)
   const location = useLocation()
 
-  const isActive = (to) => {
+  const matches = (to) => {
     const path = to.split('#')[0]
     return location.pathname === path || (path === '/' && location.pathname === '')
   }
+
+  // A parent also lights up on its children's own pages (e.g. About on /leadership).
+  const isActive = (item) => matches(item.to) || (item.children || []).some(c => matches(c.to))
 
   const handleDdClick = (e, idx) => {
     if (window.innerWidth <= 900) {
@@ -70,7 +83,7 @@ export default function Header() {
                   <>
                     <a
                       href="#"
-                      className={isActive(item.to) ? 'active' : ''}
+                      className={isActive(item) ? 'active' : ''}
                       onClick={(e) => handleDdClick(e, idx)}
                     >
                       {item.label}
@@ -86,7 +99,7 @@ export default function Header() {
                 ) : (
                   <Link
                     to={item.to}
-                    className={isActive(item.to) ? 'active' : ''}
+                    className={isActive(item) ? 'active' : ''}
                     onClick={closeMenu}
                   >
                     {item.label}

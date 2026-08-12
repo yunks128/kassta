@@ -17,16 +17,17 @@ export default function Footer() {
           <div>
             <h4>Quick Links</h4>
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/activities">Activities</Link>
             <Link to="/announcements">Announcements</Link>
+            <Link to="/about">About</Link>
+            <Link to="/leadership">Leadership</Link>
+            <Link to="/activities">Activities</Link>
+            <Link to="/media">Media</Link>
           </div>
           <div>
             <h4>Get Involved</h4>
             <Link to="/students">For Students</Link>
             <Link to="/membership">Membership</Link>
             <Link to="/donation">Donation</Link>
-            <Link to="/leadership">Leadership</Link>
           </div>
           <div>
             <h4>Connect</h4>

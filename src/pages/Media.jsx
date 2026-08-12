@@ -49,7 +49,7 @@ export default function Media() {
         </div>
       </section>
 
-      <section className="alt-bg">
+      <section className="alt-bg" id="recordings">
         <div className="container">
           <h2 className="section-title">Webinar Recordings</h2>
           <p className="section-subtitle">Monthly tech webinar recordings</p>
@@ -113,7 +113,7 @@ export default function Media() {
         </div>
       </section>
 
-      <section>
+      <section id="media-coverage">
         <div className="container">
           <h2 className="section-title">Media Coverage</h2>
           <p className="section-subtitle">KASSTA in the news</p>
@@ -155,7 +155,7 @@ export default function Media() {
         </div>
       </section>
 
-      <section className="alt-bg">
+      <section className="alt-bg" id="photo-gallery">
         <div className="container">
           <h2 className="section-title">Photo Gallery</h2>
           <p className="section-subtitle">Highlights from KASSTA events</p>
