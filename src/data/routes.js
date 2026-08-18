@@ -88,3 +88,35 @@ export const routes = [
 ]
 
 export const routeByPath = Object.fromEntries(routes.map(r => [r.path, r]))
+
+// Legacy URLs that Google still has in its index but that this site never served.
+// They come from the pre-2026 KASSTA site's nested URL scheme (/about/bylaws,
+// /activities/workshop-2025, /media-publications, ...) and currently return 404 in
+// Search Console. GitHub Pages cannot issue a 301, so prerender.mjs writes a small
+// HTML file at each of these paths that meta-refreshes to the live equivalent and
+// declares it canonical. Google treats an instant meta refresh as a redirect, so the
+// 404s clear and whatever link equity those URLs hold moves to the real page.
+//
+// These are deliberately NOT in `routes` — they must stay out of the sitemap.
+export const redirects = [
+  { from: '/about/presidents-message', to: '/about' },
+  { from: '/about/bylaws', to: '/about#bylaws' },
+  { from: '/about/partners-sponsors', to: '/about#partners' },
+  { from: '/about/leadership', to: '/leadership' },
+  { from: '/about/officers', to: '/leadership' },
+  { from: '/activities/webinar-series', to: '/webinars' },
+  { from: '/activities/newsletter', to: '/media#kassta-letters' },
+  { from: '/activities/signature-forum-2026', to: '/activities#signatureforum2026' },
+  { from: '/activities/signature-forum-2025', to: '/activities#signatureforum2025' },
+  { from: '/activities/forum-2025', to: '/activities#forum2025' },
+  { from: '/activities/forum-2024', to: '/activities#forum2024' },
+  { from: '/activities/workshop-2025', to: '/activities#workshop2025' },
+  { from: '/activities/workshop-2024', to: '/activities#workshop2024' },
+  { from: '/media-publications', to: '/media' },
+  { from: '/media-publications/newsletter', to: '/media#kassta-letters' },
+  { from: '/media-publications/photo-gallery', to: '/media#photo-gallery' },
+  { from: '/webinar-series', to: '/webinars' },
+  { from: '/news', to: '/announcements' },
+  { from: '/join', to: '/membership' },
+  { from: '/donate', to: '/donation' },
+]

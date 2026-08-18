@@ -14,10 +14,19 @@
 import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { routes, SITE_URL, DEFAULT_OG_IMAGE } from '../src/data/routes.js'
+import { routes, redirects, SITE_URL, DEFAULT_OG_IMAGE } from '../src/data/routes.js'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
+
+// GitHub Pages serves /activities from /activities/index.html and 301s the
+// slashless form to it, so the trailing-slash URL is the one that answers 200.
+// Canonical tags and the sitemap have to name that URL, not the one that redirects.
+function absolute(path) {
+  const [p, hash] = path.split('#')
+  const dir = p === '/' ? '/' : p.replace(/\/?$/, '/')
+  return SITE_URL + dir + (hash ? '#' + hash : '')
+}
 
 const escape = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
@@ -30,7 +39,7 @@ function replaceTag(html, pattern, replacement) {
 }
 
 function buildPage(template, route) {
-  const url = SITE_URL + (route.path === '/' ? '/' : route.path)
+  const url = absolute(route.path)
   const image = SITE_URL + (route.image || DEFAULT_OG_IMAGE)
   const title = escape(route.title)
   const description = escape(route.description)
@@ -62,6 +71,32 @@ for (const route of routes) {
   }
 }
 
+// Legacy URLs from the pre-2026 site (see `redirects` in src/data/routes.js) are
+// still in Google's index as 404s. GitHub Pages has no redirect rules, so each one
+// gets a real file whose only job is to bounce to the live page: an instant meta
+// refresh for crawlers and no-JS clients, location.replace for browsers (it leaves
+// no back-button trap), and a canonical tag so the target keeps the ranking.
+for (const { from, to } of redirects) {
+  const target = absolute(to)
+  const stub = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=${escape(target)}" />
+    <link rel="canonical" href="${escape(target)}" />
+    <title>Redirecting to ${escape(target)}</title>
+    <script>window.location.replace(${JSON.stringify(target)})</script>
+  </head>
+  <body>
+    <p>This page has moved. <a href="${escape(target)}">Continue to ${escape(target)}</a>.</p>
+  </body>
+</html>
+`
+  const dir = join(dist, from.replace(/^\//, ''))
+  await mkdir(dir, { recursive: true })
+  await writeFile(join(dir, 'index.html'), stub)
+}
+
 // GitHub Pages serves 404.html for any path it cannot match. Serving the SPA there
 // lets React Router render the NotFound page instead of GitHub's default 404.
 await copyFile(join(dist, 'index.html'), join(dist, '404.html'))
@@ -72,7 +107,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${routes
   .map(
     r => `  <url>
-    <loc>${SITE_URL}${r.path === '/' ? '/' : r.path}</loc>
+    <loc>${absolute(r.path)}</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>${r.priority}</priority>
   </url>`
@@ -82,4 +117,6 @@ ${routes
 `
 await writeFile(join(dist, 'sitemap.xml'), sitemap)
 
-console.log(`prerender: wrote ${routes.length} pages, 404.html, and sitemap.xml`)
+console.log(
+  `prerender: wrote ${routes.length} pages, ${redirects.length} redirect stubs, 404.html, and sitemap.xml`
+)
