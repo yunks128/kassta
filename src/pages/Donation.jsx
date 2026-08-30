@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import PageHeader from '../components/PageHeader'
+import { links } from '../data/links'
 
 export default function Donation() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
@@ -27,8 +28,8 @@ export default function Donation() {
             <div className="donation-card">
               <div className="icon">&#36;</div>
               <h3>By Zelle</h3>
-              <p>For digital donations via Zelle, contact the Financial Director:</p>
-              <p><a href="mailto:kassta.fd@gmail.com"><strong>kassta.fd@gmail.com</strong></a></p>
+              <p>For digital donations via Zelle, contact:</p>
+              <p><a href={`mailto:${links.email}?subject=${encodeURIComponent('KASSTA donation via Zelle')}`}><strong>KASSTA Financial Director</strong></a></p>
             </div>
           </div>
 
