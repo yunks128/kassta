@@ -1,3 +1,5 @@
+import { links } from './links'
+
 export const leaders = {
   executive: [
     { name: 'Eun-Suk Seo', role: 'President', affiliation: 'Professor of Physics\nUniversity of Maryland', img: 'seo' },
@@ -27,6 +29,17 @@ export const leaders = {
 // Announcements with linked YouTube videos
 export const announcements = [
   {
+    date: { month: 'SEP', day: '16', year: '2026' },
+    title: 'KASSTA Webinar: Why Do We Talk About Space?',
+    meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
+    desc: 'Sung Joo Kang, 항성 (Ph.D. in Astrophysics; Director, MORE SCIENCE Co., Ltd.; science YouTuber and creator of <안될과학>) — "Why Do We Talk About Space? When Technology Becomes a Story". Moderator: Soyeon Yi. Gift cards are planned for selected participants; to qualify, join KASSTA and choose KASSTA as your APS if you are a KSEA member.',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor',
+    zoom: 'https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1',
+    kakao: links.kakaoOpenChat,
+    flyer: 'files/KASSTA-Webinar-09-16-2026.pdf',
+    videos: [],
+  },
+  {
     date: { month: 'AUG', day: '6', year: '2026' },
     title: 'UKC 2026 AeroSpace Signature Symposium — Shaping the Future of Space',
     meta: '10:15 AM - 12:00 PM | International Ballroom, Omni Orlando Resort at ChampionsGate, FL',
@@ -46,7 +59,6 @@ export const announcements = [
     meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
     desc: 'Woosang Park (Texas A&M) - "Dynamic Nonlinearity and Model Fidelity Effects on Uncorrelated Track Processing"; Hyomin Kim (NJIT) - "Space Weather: How Sun-Earth Interactions Affect Human Technology"',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLScZBsZd4_LEmGZGb0j0TRpSUqjGAuURaHVNUeiVGkdkNIeQ3g/viewform?usp=dialog',
-    zoom: 'https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1',
     videos: [],
   },
   {
@@ -142,6 +154,12 @@ export const announcements = [
 
 // Webinar series with linked YouTube videos (verified via thumbnails)
 export const webinars = [
+  {
+    date: { month: 'SEP', day: '16', year: '2026' },
+    title: 'Why Do We Talk About Space? — When Technology Becomes a Story',
+    speakers: 'Sung Joo Kang, 항성 (Director, MORE SCIENCE Co., Ltd.; creator of <안될과학>) - Why Do We Talk About Space? When Technology Becomes a Story. Moderator: Soyeon Yi',
+    videos: [],
+  },
   {
     date: { month: 'APR', day: '24', year: '2026' },
     title: 'Dynamic Nonlinearity & Space Weather',

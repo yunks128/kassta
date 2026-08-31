@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import YouTubeCard from '../components/YouTubeCard'
 import { webinars, testimonials } from '../data/content'
+import { links } from '../data/links'
 
 export default function Home() {
   const recentVideos = webinars
@@ -24,6 +25,28 @@ export default function Home() {
 
       <section>
         <div className="container">
+          <h2 className="section-title">Upcoming Event</h2>
+          <div className="info-box" style={{ display: 'flex', gap: 32, alignItems: 'flex-start', flexWrap: 'wrap', maxWidth: 900, margin: '0 auto' }}>
+            <img src={import.meta.env.BASE_URL + 'images/webinar-sep2026.jpg'} alt="KASSTA Webinar flyer, September 16, 2026" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <span className="tag" style={{ marginBottom: 12, display: 'inline-block' }}>Upcoming</span>
+              <h2 style={{ color: 'var(--primary)', marginBottom: 8 }}>KASSTA Webinar</h2>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: 12 }}>Wednesday, September 16, 2026 | 4:00 PM PT / 7:00 PM ET | Virtual</p>
+              <p style={{ marginBottom: 8 }}><strong>Sung Joo Kang, 항성</strong> (Ph.D. in Astrophysics; Director, MORE SCIENCE Co., Ltd.; science YouTuber and creator of &lt;안될과학&gt;)<br />Why Do We Talk About Space? &mdash; When Technology Becomes a Story</p>
+              <p style={{ marginBottom: 16 }}>Moderated by <strong>Soyeon Yi</strong> (KASSTA Public Relations Director, former astronaut). Gift cards are planned for selected participants &mdash; to qualify, <Link to="/membership">join KASSTA</Link> and choose KASSTA as your APS if you are a KSEA member.</p>
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
+                <a href="https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
+                <a href={links.kakaoOpenChat} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>KakaoTalk</a>
+                <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-09-16-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="alt-bg">
+        <div className="container">
           <h2 className="section-title">Latest Event</h2>
           <div className="info-box" style={{ maxWidth: 1000, margin: '0 auto' }}>
             <img src={import.meta.env.BASE_URL + 'images/ukc-forum-2026.jpg'} alt="UKC 2026 AeroSpace Signature Symposium group photo" style={{ width: '100%', borderRadius: 8, display: 'block', marginBottom: 20 }} />
@@ -42,7 +65,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="alt-bg">
+      <section>
         <div className="container">
           <h2 className="section-title">About KASSTA</h2>
           <p className="section-subtitle">Korean American AeroSpace Science and Technology Association</p>

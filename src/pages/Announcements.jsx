@@ -3,6 +3,9 @@ import PageHeader from '../components/PageHeader'
 import YouTubeCard from '../components/YouTubeCard'
 import { announcements } from '../data/content'
 
+const smallBtn = { display: 'inline-block', fontSize: '0.85rem', padding: '8px 20px' }
+const outlineBtn = { ...smallBtn, color: 'var(--accent)', borderColor: 'var(--accent)' }
+
 export default function Announcements() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
@@ -24,10 +27,23 @@ export default function Announcements() {
                     <h3>{a.title}</h3>
                     <div className="meta">{a.meta}</div>
                     <p>{a.desc}</p>
-                    {a.link && (
-                      <a href={a.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 12, display: 'inline-block', fontSize: '0.85rem', padding: '8px 20px' }}>
-                        {a.linkLabel || 'Register'}
-                      </a>
+                    {(a.link || a.zoom || a.kakao || a.flyer) && (
+                    <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 12 }}>
+                      {a.link && (
+                        <a href={a.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={smallBtn}>
+                          {a.linkLabel || 'Register'}
+                        </a>
+                      )}
+                      {a.zoom && (
+                        <a href={a.zoom} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={smallBtn}>Zoom Link</a>
+                      )}
+                      {a.kakao && (
+                        <a href={a.kakao} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={outlineBtn}>KakaoTalk</a>
+                      )}
+                      {a.flyer && (
+                        <a href={import.meta.env.BASE_URL + a.flyer} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={outlineBtn}>View Flyer (PDF)</a>
+                      )}
+                    </div>
                     )}
                   </div>
                 </div>
