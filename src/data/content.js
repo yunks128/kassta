@@ -34,7 +34,7 @@ export const announcements = [
     meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
     desc: 'Sung Joo Kang, 항성 (Ph.D. in Astrophysics; Director, MORE SCIENCE Co., Ltd.; science YouTuber and creator of <안될과학>) — "Why Do We Talk About Space? When Technology Becomes a Story". Moderator: Soyeon Yi. Gift cards are planned for selected participants; to qualify, join KASSTA and choose KASSTA as your APS if you are a KSEA member.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor',
-    zoom: 'https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1',
+    zoom: 'https://ufl.zoom.us/j/98563992675',
     kakao: links.kakaoOpenChat,
     flyer: 'files/KASSTA-Webinar-09-16-2026.pdf',
     videos: [],

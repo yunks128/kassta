@@ -36,7 +36,7 @@ export default function Home() {
               <p style={{ marginBottom: 16 }}>Moderated by <strong>Soyeon Yi</strong> (KASSTA Public Relations Director, former astronaut). Gift cards are planned for selected participants &mdash; to qualify, <Link to="/membership">join KASSTA</Link> and choose KASSTA as your APS if you are a KSEA member.</p>
               <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
-                <a href="https://ufl.zoom.us/j/94786118635?pwd=bB2CytlDfqM3KZLXPUXgWh7CYWcTxa.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
+                <a href="https://ufl.zoom.us/j/98563992675" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
                 <a href={links.kakaoOpenChat} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>KakaoTalk</a>
                 <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-09-16-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
               </div>
