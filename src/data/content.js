@@ -37,7 +37,9 @@ export const announcements = [
     zoom: 'https://njit-edu.zoom.us/j/98538374391?pwd=tkOTmr2Rl2PuZaaSQpt0LbitQ9Vhwz.1',
     kakao: links.kakaoOpenChat,
     flyer: 'files/KASSTA-Webinar-10-21-2026.pdf',
-    videos: [],
+    videos: [
+      { id: 'aCZFpDT_SfM', title: 'Webinar Preview: Dr. Chae Kyung Sim (KASI)' },
+    ],
   },
   {
     date: { month: 'SEP', day: '16', year: '2026' },
@@ -47,7 +49,10 @@ export const announcements = [
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor',
     kakao: links.kakaoOpenChat,
     flyer: 'files/KASSTA-Webinar-09-16-2026.pdf',
-    videos: [],
+    videos: [
+      { id: 'S_71ifNmwR4', title: 'Sung Joo Kang (항성) - Why Do We Talk About Space? (full webinar)' },
+      { id: 'SR97JGPZFbo', title: 'Webinar Preview: Sung Joo Kang (항성)' },
+    ],
   },
   {
     date: { month: 'AUG', day: '6', year: '2026' },
@@ -174,7 +179,10 @@ export const webinars = [
     date: { month: 'SEP', day: '16', year: '2026' },
     title: 'Why Do We Talk About Space? — When Technology Becomes a Story',
     speakers: 'Sung Joo Kang, 항성 (Director, MORE SCIENCE Co., Ltd.; creator of <안될과학>) - Why Do We Talk About Space? When Technology Becomes a Story. Moderator: Soyeon Yi',
-    videos: [],
+    videos: [
+      { id: 'S_71ifNmwR4', title: 'Sung Joo Kang (항성) - Why Do We Talk About Space? (full webinar)' },
+      { id: 'SR97JGPZFbo', title: 'Webinar Preview: Sung Joo Kang (항성)' },
+    ],
   },
   {
     date: { month: 'APR', day: '24', year: '2026' },

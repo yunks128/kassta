@@ -38,6 +38,7 @@ export default function Home() {
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPwPHPFHpt5_jbNmzm9IGZOl3LIZK7IqqOaIDS8f6UsCvXw/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
                 <a href="https://njit-edu.zoom.us/j/98538374391?pwd=tkOTmr2Rl2PuZaaSQpt0LbitQ9Vhwz.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
                 <a href={links.kakaoOpenChat} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>KakaoTalk</a>
+                <a href="https://youtu.be/aCZFpDT_SfM" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>Watch Preview</a>
                 <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-10-21-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
               </div>
             </div>
@@ -48,18 +49,18 @@ export default function Home() {
       <section className="alt-bg">
         <div className="container">
           <h2 className="section-title">Latest Event</h2>
-          <div className="info-box" style={{ maxWidth: 1000, margin: '0 auto' }}>
-            <img src={import.meta.env.BASE_URL + 'images/ukc-forum-2026.jpg'} alt="UKC 2026 AeroSpace Signature Symposium group photo" style={{ width: '100%', borderRadius: 8, display: 'block', marginBottom: 20 }} />
-            <span className="tag" style={{ marginBottom: 12, display: 'inline-block' }}>Just Held</span>
-            <h2 style={{ color: 'var(--primary)', marginBottom: 8 }}>UKC 2026 AeroSpace Signature Symposium &mdash; Shaping the Future of Space</h2>
-            <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: 12 }}>Thursday, August 6, 2026 | 10:15 AM - 12:00 PM | International Ballroom, Omni Orlando Resort at ChampionsGate, FL</p>
-            <p style={{ marginBottom: 12 }}>KASSTA hosted the AeroSpace Signature Symposium at UKC 2026 in Orlando, Florida, offering a comprehensive perspective on the future of space through advances in human spaceflight, soft robotics, aerospace engineering, and next-generation space computing.</p>
-            <p style={{ marginBottom: 8 }}><strong>Chair:</strong> Eun-Suk Seo (President of KASSTA, University of Maryland)</p>
-            <p style={{ marginBottom: 16 }}><strong>Speakers:</strong> Soyeon Yi (Astronaut, SPEX), Dae Young Lee (KAIST), Eun Jung Chae (CSU Long Beach), Kyongsik Yun (NASA JPL)</p>
-            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-              <Link to="/activities#signatureforum2026" className="btn btn-primary">Symposium Details</Link>
-              <a href="https://youtu.be/Pv9E0NDTkAM" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Watch UKC 2026 Day 1</a>
-              <a href={import.meta.env.BASE_URL + 'files/UKC-2026-AeroSpace-Signature-Symposium.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>Program (PDF)</a>
+          <div className="info-box" style={{ display: 'flex', gap: 32, alignItems: 'flex-start', flexWrap: 'wrap', maxWidth: 900, margin: '0 auto' }}>
+            <img src={import.meta.env.BASE_URL + 'images/webinar-sep2026.jpg'} alt="KASSTA Webinar flyer, September 16, 2026" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <span className="tag" style={{ marginBottom: 12, display: 'inline-block' }}>Recording Available</span>
+              <h2 style={{ color: 'var(--primary)', marginBottom: 8 }}>KASSTA Webinar</h2>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: 12 }}>Wednesday, September 16, 2026 | Virtual</p>
+              <p style={{ marginBottom: 8 }}><strong>Sung Joo Kang, 항성</strong> (Ph.D. in Astrophysics; Director, MORE SCIENCE Co., Ltd.; science YouTuber and creator of &lt;안될과학&gt;)<br />Why Do We Talk About Space? &mdash; When Technology Becomes a Story</p>
+              <p style={{ marginBottom: 16 }}>Moderated by <strong>Soyeon Yi</strong> (KASSTA Public Relations Director, former astronaut).</p>
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                <a href="https://youtu.be/S_71ifNmwR4" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Watch Full Recording</a>
+                <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-09-16-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
+              </div>
             </div>
           </div>
         </div>
