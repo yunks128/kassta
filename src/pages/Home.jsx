@@ -27,18 +27,18 @@ export default function Home() {
         <div className="container">
           <h2 className="section-title">Upcoming Event</h2>
           <div className="info-box" style={{ display: 'flex', gap: 32, alignItems: 'flex-start', flexWrap: 'wrap', maxWidth: 900, margin: '0 auto' }}>
-            <img src={import.meta.env.BASE_URL + 'images/webinar-sep2026.jpg'} alt="KASSTA Webinar flyer, September 16, 2026" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
+            <img src={import.meta.env.BASE_URL + 'images/webinar-oct2026.jpg'} alt="KASSTA Webinar flyer, October 21, 2026" style={{ width: 280, borderRadius: 8, flexShrink: 0 }} />
             <div style={{ flex: 1, minWidth: 280 }}>
               <span className="tag" style={{ marginBottom: 12, display: 'inline-block' }}>Upcoming</span>
               <h2 style={{ color: 'var(--primary)', marginBottom: 8 }}>KASSTA Webinar</h2>
-              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: 12 }}>Wednesday, September 16, 2026 | 4:00 PM PT / 7:00 PM ET | Virtual</p>
-              <p style={{ marginBottom: 8 }}><strong>Sung Joo Kang, 항성</strong> (Ph.D. in Astrophysics; Director, MORE SCIENCE Co., Ltd.; science YouTuber and creator of &lt;안될과학&gt;)<br />Why Do We Talk About Space? &mdash; When Technology Becomes a Story</p>
-              <p style={{ marginBottom: 16 }}>Moderated by <strong>Soyeon Yi</strong> (KASSTA Public Relations Director, former astronaut). Gift cards are planned for selected participants &mdash; to qualify, <Link to="/membership">join KASSTA</Link> and choose KASSTA as your APS if you are a KSEA member.</p>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--accent)', marginBottom: 12 }}>Wednesday, October 21, 2026 | 4:00 PM PT / 7:00 PM ET | Virtual</p>
+              <p style={{ marginBottom: 8 }}><strong>Chae Kyung Sim, 심채경</strong> (Ph.D. in Astrophysics; Head, Center for Planetary Exploration, Korea Astronomy and Space Science Institute)<br />KASI&rsquo;s Science Payloads for Lunar Landers</p>
+              <p style={{ marginBottom: 16 }}>Moderated by <strong>Simon Sim</strong> (KASSTA Media Director). Gift cards are planned for selected participants &mdash; to qualify, <Link to="/membership">join KASSTA</Link> and choose KASSTA as your APS if you are a KSEA member.</p>
               <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
-                <a href="https://ufl.zoom.us/j/98563992675" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkPwPHPFHpt5_jbNmzm9IGZOl3LIZK7IqqOaIDS8f6UsCvXw/viewform" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Register</a>
+                <a href="https://njit-edu.zoom.us/j/98538374391?pwd=tkOTmr2Rl2PuZaaSQpt0LbitQ9Vhwz.1" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Zoom Link</a>
                 <a href={links.kakaoOpenChat} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>KakaoTalk</a>
-                <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-09-16-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
+                <a href={import.meta.env.BASE_URL + 'files/KASSTA-Webinar-10-21-2026.pdf'} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ color: 'var(--accent)', borderColor: 'var(--accent)' }}>View Flyer (PDF)</a>
               </div>
             </div>
           </div>

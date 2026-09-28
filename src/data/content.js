@@ -29,12 +29,22 @@ export const leaders = {
 // Announcements with linked YouTube videos
 export const announcements = [
   {
+    date: { month: 'OCT', day: '21', year: '2026' },
+    title: "KASSTA Webinar: KASI's Science Payloads for Lunar Landers",
+    meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
+    desc: 'Chae Kyung Sim, 심채경 (Ph.D. in Astrophysics; Head, Center for Planetary Exploration, Korea Astronomy and Space Science Institute) — "KASI\'s Science Payloads for Lunar Landers". Moderator: Simon Sim. Gift cards are planned for selected participants; to qualify, join KASSTA and choose KASSTA as your APS if you are a KSEA member.',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdkPwPHPFHpt5_jbNmzm9IGZOl3LIZK7IqqOaIDS8f6UsCvXw/viewform',
+    zoom: 'https://njit-edu.zoom.us/j/98538374391?pwd=tkOTmr2Rl2PuZaaSQpt0LbitQ9Vhwz.1',
+    kakao: links.kakaoOpenChat,
+    flyer: 'files/KASSTA-Webinar-10-21-2026.pdf',
+    videos: [],
+  },
+  {
     date: { month: 'SEP', day: '16', year: '2026' },
     title: 'KASSTA Webinar: Why Do We Talk About Space?',
     meta: '4:00 PM PT / 7:00 PM ET | Virtual (Zoom)',
     desc: 'Sung Joo Kang, 항성 (Ph.D. in Astrophysics; Director, MORE SCIENCE Co., Ltd.; science YouTuber and creator of <안될과학>) — "Why Do We Talk About Space? When Technology Becomes a Story". Moderator: Soyeon Yi. Gift cards are planned for selected participants; to qualify, join KASSTA and choose KASSTA as your APS if you are a KSEA member.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSchmhttnbwuu6MECxNNtmjz8qV8Kdo1_tX37MN7b4TzyaAzlQ/viewform?usp=publish-editor',
-    zoom: 'https://ufl.zoom.us/j/98563992675',
     kakao: links.kakaoOpenChat,
     flyer: 'files/KASSTA-Webinar-09-16-2026.pdf',
     videos: [],
@@ -154,6 +164,12 @@ export const announcements = [
 
 // Webinar series with linked YouTube videos (verified via thumbnails)
 export const webinars = [
+  {
+    date: { month: 'OCT', day: '21', year: '2026' },
+    title: "KASI's Science Payloads for Lunar Landers",
+    speakers: "Chae Kyung Sim, 심채경 (Head, Center for Planetary Exploration, KASI) - KASI's Science Payloads for Lunar Landers. Moderator: Simon Sim",
+    videos: [],
+  },
   {
     date: { month: 'SEP', day: '16', year: '2026' },
     title: 'Why Do We Talk About Space? — When Technology Becomes a Story',
